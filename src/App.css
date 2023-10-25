@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800&family=Spectral:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Onest", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+ul {
+  list-style: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  height: 85px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  padding: 0rem 4rem;
+  position: relative;
+
+  color: #001633;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h1 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  /* color: #1b5cb1; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header-nav {
+  display: flex;
+  gap: 3rem;
+  margin-left: 6rem;
 }
 
-.card {
-  padding: 2em;
+.header-nav li {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+.header-nav li img {
+  opacity: 0.3;
+}
+
+.header-rs {
+  display: flex;
+  margin-left: auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header-rs p {
+  border-bottom: 2px solid #01295f;
+  padding: 0.3rem 0;
+}
+
+.header-rs button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  background-color: #01295f;
+  /* background-color: #1b5cb1; */
+  color: #fff;
+}
+
+.active-tab {
+  border-bottom: 3px solid #01295f;
+  width: 60px;
+  /* border: 1px solid red; */
 }
