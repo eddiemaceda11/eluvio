@@ -1,3 +1,5 @@
+import Cards from "./Cards";
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -8,7 +10,7 @@ const Hero = () => {
         <p className="inactive">Monthly</p>
         <p className="active">Annual (save 15%)</p>
       </div>
-      {/* <Cards /> */}
+      <Cards />
     </section>
   );
 };
