@@ -41,6 +41,7 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
   );
 };
 
+//cards
 const Cards = () => {
   return (
     <section className="cards">
