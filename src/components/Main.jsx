@@ -19,7 +19,7 @@ const Main = () => {
           <button>Join for free</button>
         </div>
         <h5>
-          *By submitting your email address, you agree to Teachable's <br />
+          *By submitting your email address, you agree to e:luvios <br />
           Terms of use and Privacy Policy.
         </h5>
       </div>
