@@ -435,3 +435,48 @@ main div img {
 .business-plan-terms {
   position: absolute;
 }
+
+/* FAQS */
+.faqs {
+  background-color: #ebf2fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqs h2 {
+  font-size: 3.2rem;
+  font-weight: 200;
+  margin-top: 5.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.faqs-item {
+  border-bottom: 1px solid #000;
+  width: 800px;
+}
+
+.faqs-item-top {
+  display: flex;
+  /* border: 1px solid blue; */
+  align-items: center;
+  justify-content: space-between;
+  height: 7.4rem;
+}
+
+.faqs-item-top p {
+  font-size: 1.9rem;
+  font-weight: 100;
+}
+
+.faqs-item-top span {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.faqs-item-bottom {
+  margin-bottom: 3rem;
+  font-size: 18px;
+  font-weight: 300;
+}
