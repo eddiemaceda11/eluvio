@@ -18,10 +18,7 @@ const Main = () => {
           ></input>
           <button>Join for free</button>
         </div>
-        <h5>
-          *By submitting your email address, you agree to our <br />
-          Terms of use and Privacy Policy.
-        </h5>
+        <h5>*By submitting your email address, you agree to our Terms of use and Privacy Policy.</h5>
       </div>
     </main>
   );
