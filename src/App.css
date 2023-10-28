@@ -325,3 +325,113 @@ main div img {
   color: #0fa3b1;
   margin-right: 1rem;
 }
+
+/* Business */
+.business-plan {
+  display: flex;
+  justify-content: center;
+  height: 1100px;
+  width: 100%;
+  padding-top: 28rem;
+  gap: 8rem;
+
+  position: relative;
+}
+
+.business-left {
+  border: 1px solid #dfdfdf;
+  border-top: 8px solid #01295f;
+  height: 70%;
+  width: 30%;
+
+  padding: 0rem 2rem;
+  color: #01295f;
+}
+
+.business-left h2 {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+
+.business-left h3 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 1.2rem;
+  /* height: 5rem; */
+}
+
+.business-left div {
+  font-size: 6rem;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.business-left div span {
+  font-size: 1.5rem;
+}
+
+.business-left p {
+  font-size: 1.1rem;
+  margin-top: 0.9rem;
+}
+
+.business-right {
+  /* border: 1px solid #dfdfdf; */
+  height: 85%;
+  width: 30%;
+  margin-top: -2.2rem;
+  color: #01295f;
+}
+
+.business-right h2 {
+  font-size: 2.3rem;
+  font-weight: 100;
+}
+
+.business-right h3 {
+  font-size: 21px;
+  font-weight: 300;
+  margin-top: 1.1rem;
+}
+
+.business-right ul {
+  margin-top: 2.1rem;
+  font-size: 19px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.business-right ul div {
+  display: flex;
+}
+
+.business-right ul div li {
+  line-height: 1.7;
+}
+
+.business-right ul div i {
+  margin-top: 5px;
+}
+
+.business-right button {
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 1.3rem 1.8rem;
+  border-radius: 0.4rem;
+  background-color: #8fb8ed;
+  margin-top: 2.6rem;
+}
+
+.business-right p {
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+.business-plan-terms {
+  position: absolute;
+}
