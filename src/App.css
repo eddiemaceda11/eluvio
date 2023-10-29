@@ -443,6 +443,7 @@ main div img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .faqs h2 {
@@ -459,7 +460,6 @@ main div img {
 
 .faqs-item-top {
   display: flex;
-  /* border: 1px solid blue; */
   align-items: center;
   justify-content: space-between;
   height: 7.4rem;
@@ -468,11 +468,13 @@ main div img {
 .faqs-item-top p {
   font-size: 1.9rem;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .faqs-item-top span {
   font-size: 2.5rem;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .faqs-item-bottom {

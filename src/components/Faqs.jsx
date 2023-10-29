@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const faqsList = [
   {
     id: 0,
@@ -28,28 +30,43 @@ const faqsList = [
 ];
 
 const Faqs = () => {
+  // const [faqsList, setFaqsList] = useState(faqsArray);
+  const [currentOpen, setCurrentOpen] = useState(null);
+
   return (
     <section className="faqs">
       <h2>Pricing FAQs</h2>
-      {faqsList.map((element) => (
+      {faqsList.map((element, i) => (
         <FaqsItem
           key={element.id}
+          num={i}
           question={element.question}
           answer={element.answer}
+          currentOpen={currentOpen}
+          onOpen={setCurrentOpen}
         />
       ))}
     </section>
   );
 };
 
-const FaqsItem = ({ question, answer }) => {
+const FaqsItem = ({ num, question, answer, currentOpen, onOpen }) => {
+  const isOpen = num === currentOpen;
+
+  function handleToggle() {
+    onOpen(isOpen ? null : num);
+  }
+
   return (
-    <div className="faqs-item">
+    <div
+      className="faqs-item"
+      onClick={handleToggle}
+    >
       <div className="faqs-item-top">
         <p>{question}</p>
-        <span>+</span>
+        <span>{isOpen ? "-" : "+"}</span>
       </div>
-      {/* <p className="faqs-item-bottom">{answer}</p> */}
+      {isOpen && <p className="faqs-item-bottom">{answer}</p>}
     </div>
   );
 };
