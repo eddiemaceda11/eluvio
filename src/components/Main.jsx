@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Main = () => {
+  const [currentEmail, setCurrentEmail] = useState("");
+
   return (
     <main>
       <div className="img-div">
@@ -14,7 +18,9 @@ const Main = () => {
         <div className="main-input-form">
           <input
             type="text"
-            value="hello@example.com"
+            value={currentEmail}
+            placeholder="hello@example.com"
+            onChange={(e) => setCurrentEmail(e.target.value)}
           ></input>
           <button>Join for free</button>
         </div>
