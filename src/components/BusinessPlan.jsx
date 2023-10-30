@@ -43,6 +43,7 @@ const BusinessPlan = () => {
         <br />
         Plans can be canceled any time. Standard processing fees apply. Have questions? Contact support@eluvio.com
       </p>
+      <p className="compare">Compare all plan features ↓</p>
     </section>
   );
 };
