@@ -38,7 +38,11 @@ const BusinessPlan = () => {
         <button>Select Business</button>
         <p>Or select business monthly - $665/month</p>
       </div>
-      <p className="business-plan-terms"></p>
+      <p className="business-plan-terms">
+        Our plans will automatically renew until canceled. Recurring charges may be subject to changes.
+        <br />
+        Plans can be canceled any time. Standard processing fees apply. Have questions? Contact support@eluvio.com
+      </p>
     </section>
   );
 };
