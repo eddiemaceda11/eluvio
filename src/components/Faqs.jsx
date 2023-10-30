@@ -35,17 +35,20 @@ const Faqs = () => {
 
   return (
     <section className="faqs">
-      <h2>Pricing FAQs</h2>
-      {faqsList.map((element, i) => (
-        <FaqsItem
-          key={element.id}
-          num={i}
-          question={element.question}
-          answer={element.answer}
-          currentOpen={currentOpen}
-          onOpen={setCurrentOpen}
-        />
-      ))}
+      <div className="faqs-top-spacing"></div>
+      <div className="faqs-div">
+        <h2>Pricing FAQs</h2>
+        {faqsList.map((element, i) => (
+          <FaqsItem
+            key={element.id}
+            num={i}
+            question={element.question}
+            answer={element.answer}
+            currentOpen={currentOpen}
+            onOpen={setCurrentOpen}
+          />
+        ))}
+      </div>
     </section>
   );
 };
