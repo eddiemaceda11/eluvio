@@ -32,10 +32,10 @@ const BusinessPlan = () => {
           </div>
           <div>
             <i className="fa-regular fa-circle-check"></i>
-            <li>Bulk student enrollment</li>
+            <li>Bulk classroom enrollment</li>
           </div>
         </ul>
-        <button>Select Business</button>
+        <button onClick={() => console.log("hi")}>Select Business</button>
         <p>Or select business monthly - $665/month</p>
       </div>
       <p className="business-plan-terms">
