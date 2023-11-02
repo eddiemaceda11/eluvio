@@ -1,7 +1,9 @@
 const Reviews = () => {
   return (
     <section className="reviews">
-      <div className="container"></div>
+      <div className="reviews-container">
+        <img></img>
+      </div>
     </section>
   );
 };
