@@ -3,6 +3,7 @@ const Reviews = () => {
     <section className="reviews">
       <div className="reviews-container">
         <img></img>
+        <h4>Jane</h4>
       </div>
     </section>
   );
