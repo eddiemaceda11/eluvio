@@ -36,7 +36,7 @@ const BusinessPlan = () => {
           </div>
         </ul>
         <button onClick={() => console.log("hi")}>Select Business</button>
-        <p>Or select business monthly - $665/month</p>
+        <p>Or select business monthly - $699/month</p>
       </div>
       <p className="business-plan-terms">
         Our plans will automatically renew until canceled. Recurring charges may be subject to changes.
