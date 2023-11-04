@@ -9,6 +9,7 @@ const Reviews = () => {
         <p>
           <i>By the far the most effective AI solution on the market. The techonology is cutting edge, and the support is unmatched.</i>
         </p>
+        <span>July 2023</span>
       </div>
     </section>
   );
