@@ -5,6 +5,7 @@ const Reviews = () => {
         <img></img>
         <h4>Jane</h4>
         <h5>Director of Cyber Security @ Geneva Inc.</h5>
+        <div className="mid-border"></div>
       </div>
     </section>
   );
