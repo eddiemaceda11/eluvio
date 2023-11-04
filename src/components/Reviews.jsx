@@ -3,8 +3,8 @@ const Reviews = () => {
     <section className="reviews">
       <div className="reviews-container">
         <img></img>
-
         <h4>Jane</h4>
+        <h5>Director of Cyber Security @ Geneva Inc.</h5>
       </div>
     </section>
   );
