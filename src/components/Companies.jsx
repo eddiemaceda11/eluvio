@@ -12,4 +12,6 @@ const Companies = () => {
   );
 };
 
+// *NOTE - Will map through ul, and li elements will become individual "Company" components
+
 export default Companies;
