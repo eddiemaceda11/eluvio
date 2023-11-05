@@ -545,3 +545,9 @@ main div img {
   border-radius: 50%;
   border: 1px solid red;
 }
+
+/* COMPANIES */
+.companies {
+  height: 300px;
+  border: 1px solid red;
+}
