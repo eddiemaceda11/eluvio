@@ -338,28 +338,6 @@ main div img {
 
   position: relative;
 }
-/* 
-.levels {
-  position: absolute;
-  top: 33%;
-
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-
-  width: 100%;
-} */
-
-/* .full {
-  background-color: #0fa3b1;
-}
-
-.level {
-  border: 1px solid #0fa3b1;
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
-} */
 
 .business-left {
   border: 1px solid #dfdfdf;
