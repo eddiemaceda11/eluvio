@@ -1,9 +1,13 @@
-import React from "react";
-
 const Companies = () => {
   return (
     <section className="companies">
-      <div></div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
   );
 };
