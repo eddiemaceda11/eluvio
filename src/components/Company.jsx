@@ -1,5 +1,9 @@
 const Company = ({ company }) => {
-  return <li>{company.name}</li>;
+  return (
+    <li>
+      {company.name} founded on {company.founded}
+    </li>
+  );
 };
 
 export default Company;
