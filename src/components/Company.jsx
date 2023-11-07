@@ -1,5 +1,5 @@
-const Company = () => {
-  return <li>This is a company</li>;
+const Company = ({ company }) => {
+  return <li>{company.name}</li>;
 };
 
 export default Company;
