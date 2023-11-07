@@ -21,6 +21,11 @@ const dummyCompanyData = [
     founded: 1974,
     id: 4,
   },
+  {
+    name: "Company 5",
+    founded: 1997,
+    id: 5,
+  },
 ];
 
 const Companies = () => {
