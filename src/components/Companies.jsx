@@ -21,11 +21,9 @@ const Companies = () => {
   return (
     <section className="companies">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        {dummyCompanyData.map((company) => (
+          <Company company={company} />
+        ))}
       </ul>
     </section>
   );
