@@ -103,6 +103,7 @@ main .img-div {
   margin-top: 2.6rem;
   line-height: 1.5;
   font-weight: 300;
+  font-size: 18px;
 }
 
 @keyframes slideInLeft {
