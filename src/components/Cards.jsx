@@ -47,7 +47,7 @@ const Cards = () => {
     <section className="cards">
       <Card
         plan="Free"
-        planDesc="Try it out and start earning before you pay."
+        planDesc="Try it out and start earning before you pay - No fees attached."
         price="0"
         terms="No credit card required"
         features="Free plan features include:"
@@ -61,7 +61,7 @@ const Cards = () => {
       />
       <Card
         plan="Pro"
-        planDesc="Advanced tools and more support to help you scale."
+        planDesc="Advanced tools and more support to help you scale and grow."
         price="119"
         terms="$1,428 billed annually"
         features="All Basic plan features plus:"
