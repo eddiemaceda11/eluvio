@@ -192,6 +192,7 @@ main div img {
 
 .hero h2 {
   font-size: 3.6rem;
+  font-weight: 500;
   color: #01295f;
 }
 
@@ -201,7 +202,7 @@ main div img {
 }
 
 .hero h2:nth-child(2) {
-  font-weight: 100;
+  font-weight: 300;
   padding-top: 0.6rem;
 }
 
