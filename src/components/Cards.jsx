@@ -47,7 +47,7 @@ const Cards = () => {
     <section className="cards">
       <Card
         plan="Free"
-        planDesc="Try it out and start earning before you pay - No fees attached."
+        planDesc="Try it out and start earning before you pay - No fees attached"
         price="0"
         terms="No credit card required"
         features="Free plan features include:"
