@@ -313,7 +313,7 @@ main div img {
 }
 
 .card-info div {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
   display: flex;
 }
 
@@ -328,6 +328,7 @@ main div img {
 .fa-circle-check {
   color: #0fa3b1;
   margin-right: 1rem;
+  /* margin-top: 2px; */
 }
 
 /* Business */
