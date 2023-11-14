@@ -56,7 +56,7 @@ const Cards = () => {
         plan="Basic"
         planDesc="The foundational tools and support you need to build your business."
         price="39"
-        terms="$468 billed annually"
+        terms="$899 billed annually"
         features="All Free plan features plus:"
       />
       <Card
