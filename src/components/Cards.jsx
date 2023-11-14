@@ -70,7 +70,7 @@ const Cards = () => {
         plan="Pro+"
         planDesc="More products and custom user roles for fast-growing businesses."
         price="199"
-        terms="$2,388 billed annually"
+        terms="$2,999 billed annually"
         features="All Pro plan features plus:"
       />
     </section>
