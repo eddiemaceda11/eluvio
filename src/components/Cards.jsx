@@ -63,7 +63,7 @@ const Cards = () => {
         plan="Pro"
         planDesc="Advanced tools and more support to help you scale and grow."
         price="119"
-        terms="$1,428 billed annually"
+        terms="$1,999 billed annually"
         features="All Basic plan features plus:"
       />
       <Card
