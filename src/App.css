@@ -324,11 +324,16 @@ main div img {
   margin-top: 1rem;
 }
 
-.card-info .fa-circle-check {
+.card-info .fa-circle-check,
+.business-right .fa-circle-check {
   color: #0fa3b1;
   margin-right: 1rem;
-  /* margin-top: 2.4px; */
 }
+
+.card-info .fa-circle-check {
+  margin-top: 2.4px;
+}
+
 /* Business */
 .business-plan {
   display: flex;
@@ -339,6 +344,10 @@ main div img {
   gap: 8rem;
 
   position: relative;
+}
+
+.business-right .fa-circle-check {
+  margin-top: 0.5rem;
 }
 
 .business-left {
