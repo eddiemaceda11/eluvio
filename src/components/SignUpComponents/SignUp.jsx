@@ -18,5 +18,9 @@ const steps = [
 ];
 
 export default function SignUp() {
-  return <div className="signup-section">{/* <FormContainer steps={steps} /> */}</div>;
+  return (
+    <div className="signup-section">
+      <FormContainer steps={steps} />
+    </div>
+  );
 }
