@@ -9,12 +9,12 @@ export default function FormContainer({ steps }) {
 
   return (
     <section className="form-container">
-      <StepsContainer
+      {/* <StepsContainer
         steps={steps}
         currentStep={currentStep}
         onClick={changeCurrentStep}
-      />
-      <InfoContainer currentStep={currentStep} />
+      /> */}
+      {/* <InfoContainer currentStep={currentStep} /> */}
     </section>
   );
 }
