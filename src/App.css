@@ -461,6 +461,12 @@ main div img {
   cursor: pointer;
 }
 
+/* SIGNUP */
+.signup-section {
+  /* font-family: sans-serif; */
+  text-align: center;
+}
+
 /* FAQS */
 .faqs {
   background-color: #ebf2fa;
