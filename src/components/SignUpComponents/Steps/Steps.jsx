@@ -3,7 +3,7 @@ const Steps = ({ steps, currentStep }) => {
     <div className="steps">
       <ul>
         {steps.map((step) => (
-          <Step />
+          <Step step={step} />
         ))}
       </ul>
     </div>
