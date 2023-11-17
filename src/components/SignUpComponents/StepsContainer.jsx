@@ -3,6 +3,11 @@ const StepsContainer = ({ steps, currentStep, onClick }) => {
     <div
       className="steps-container"
       onClick={onClick}
-    ></div>
+    >
+      <Steps
+        steps={steps}
+        currentStep={currentStep}
+      />
+    </div>
   );
 };
