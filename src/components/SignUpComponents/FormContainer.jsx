@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function FormContainer(/*{steps}*/) {
+export default function FormContainer({ steps }) {
   const [currentStep, setCurrentStep] = useState(1);
 
   // const changeCurrentStep = () => {
