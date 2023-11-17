@@ -9,13 +9,13 @@ export default function FormContainer(/*{steps}*/) {
 
   return (
     <section className="form-container">
-      <StepsContainer />
-      <InfoContainer />
-      {/* <StepsContainer
+      <StepsContainer
         steps={steps}
         currentStep={currentStep}
         onClick={changeCurrentStep}
-      /> */}
+      />
+      <InfoContainer />
+
       {/* <InfoContainer currentStep={currentStep} /> */}
     </section>
   );
