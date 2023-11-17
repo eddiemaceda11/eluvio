@@ -472,6 +472,75 @@ main div img {
   border: 1px solid red;
 }
 
+/* Steps Container */
+.steps-container {
+  border-radius: 8px;
+  background-color: rgb(25, 35, 68);
+  width: 16rem;
+  height: 94.2%;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.steps {
+  height: 18rem;
+  width: 13rem;
+  margin-left: 1.8rem;
+  margin-top: 2.4rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  color: rgb(221, 221, 221);
+  margin-bottom: 1.8rem;
+}
+
+.num {
+  background-color: transparent;
+  width: 31px;
+  height: 31px;
+  /* margin-top: 2px; */
+  padding-bottom: 1.1px;
+  padding-right: 1px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.num-active {
+  background-color: hsl(206, 94%, 87%);
+  color: #000;
+  border: none;
+}
+
+.step-info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.step-num {
+  font-weight: 400;
+  font-size: 12px;
+  align-self: flex-start;
+  color: rgb(172, 172, 172);
+}
+
+.step-text {
+  font-size: 14px;
+  font-weight: 800;
+  align-self: flex-start;
+  letter-spacing: 0.8px;
+}
+
 /* FAQS */
 .faqs {
   background-color: #ebf2fa;
