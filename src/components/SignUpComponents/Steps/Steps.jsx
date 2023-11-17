@@ -5,7 +5,10 @@ const Steps = ({ steps, currentStep }) => {
     <div className="steps">
       <ul>
         {steps.map((step) => (
-          <Step step={step} />
+          <Step
+            step={step}
+            currentStep={currentStep}
+          />
         ))}
       </ul>
     </div>

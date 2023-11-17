@@ -1,4 +1,4 @@
-const Step = ({ step }) => {
+const Step = ({ step, currentStep }) => {
   return (
     <li
       key={step.step}

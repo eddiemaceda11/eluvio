@@ -13,3 +13,5 @@ const StepsContainer = ({ steps, currentStep, onClick }) => {
     </div>
   );
 };
+
+export default StepsContainer;
