@@ -15,7 +15,7 @@ export default function FormContainer({ steps }) {
         currentStep={currentStep}
         onClick={changeCurrentStep}
       />
-      <InfoContainer />
+      {/* <InfoContainer /> */}
 
       {/* <InfoContainer currentStep={currentStep} /> */}
     </section>
