@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StepsContainer from "./StepsContainer";
 
 export default function FormContainer({ steps }) {
   const [currentStep, setCurrentStep] = useState(1);
