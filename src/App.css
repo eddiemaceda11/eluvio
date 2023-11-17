@@ -463,13 +463,27 @@ main div img {
 
 /* SIGNUP */
 .signup-section {
-  font-family: sans-serif;
+  /* font-family: sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 900px;
-  border: 1px solid red;
+  border: 1px solid red; */
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form-container {
+  box-shadow: 1px 1px 8px 3px rgba(153, 153, 153, 0.3);
+  width: 870px;
+  height: 560px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Steps Container */
