@@ -1,3 +1,5 @@
+import Steps from "./Steps";
+
 const StepsContainer = ({ steps, currentStep, onClick }) => {
   return (
     <div
