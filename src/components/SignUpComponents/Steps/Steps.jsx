@@ -1,3 +1,5 @@
+import Step from "./Step";
+
 const Steps = ({ steps, currentStep }) => {
   return (
     <div className="steps">
