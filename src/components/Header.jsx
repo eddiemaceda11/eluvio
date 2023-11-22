@@ -18,7 +18,7 @@ const Header = () => {
         <li>Pricing</li>
       </ul>
       <div className="header-rs">
-        <p>Creator login</p>
+        <p>Dashboard</p>
         <button>Start for free</button>
       </div>
     </header>
