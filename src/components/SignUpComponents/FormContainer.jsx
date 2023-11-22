@@ -1,11 +1,17 @@
 import { useState } from "react";
 import StepsContainer from "./Steps/StepsContainer";
+import InfoContainer from "./InfoContainer";
 
 export default function FormContainer({ steps }) {
   const [currentStep, setCurrentStep] = useState(1);
 
   const changeCurrentStep = () => {
-    setCurrentStep((prevState) => (prevState === 1 ? 2 : 1));
+    setCurrentStep((prevState) => {
+      if (prevState === 1) return 2;
+      if (prevState === 2) return 3;
+      if (prevState === 3) return 4;
+      if (prevState === 4) return 1;
+    });
   };
 
   return (
@@ -16,9 +22,7 @@ export default function FormContainer({ steps }) {
           currentStep={currentStep}
           onClick={changeCurrentStep}
         />
-        {/* <InfoContainer /> */}
-
-        {/* <InfoContainer currentStep={currentStep} /> */}
+        <InfoContainer currentStep={currentStep} />
       </div>
     </section>
   );
