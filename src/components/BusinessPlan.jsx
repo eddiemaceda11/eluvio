@@ -2,7 +2,7 @@ const BusinessPlan = () => {
   return (
     <section className="business-plan">
       <div className="business-left">
-        <h2>Business Plan</h2>
+        <h2>Enterprise Plan</h2>
         <h3>Our most advanced creators deserve our most advanced feature yet. Scale your enterprise on the Business plan.</h3>
         <div>
           $499
@@ -11,7 +11,7 @@ const BusinessPlan = () => {
         <p>$5,998 billed annually</p>
       </div>
       <div className="business-right">
-        <h2>Business Plan</h2>
+        <h2>Enterprise</h2>
         <h3>All Pro + plan features plus:</h3>
         <ul>
           <div>
