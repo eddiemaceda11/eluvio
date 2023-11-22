@@ -8,7 +8,7 @@ const Hero = () => {
       <button>Start for free</button>
       <div className="subscription-length">
         <p className="inactive">Monthly</p>
-        <p className="active">Annual (save 15%)</p>
+        <p className="hero-active-subscription">Annual (save 15%)</p>
       </div>
       <Cards />
     </section>
