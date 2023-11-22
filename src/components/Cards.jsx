@@ -30,7 +30,7 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
         </div>
         <div>
           <i className="fa-regular fa-circle-check"></i>
-          <li>teachable:pay with integrated payment processing</li>
+          <li>Finance with integrated payment processing</li>
         </div>
         <div>
           <i className="fa-regular fa-circle-check"></i>
