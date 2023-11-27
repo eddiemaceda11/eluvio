@@ -8,7 +8,7 @@ import Companies from "../components/Companies";
 import SignUp from "../components/SignUpComponents/SignUp";
 
 const Pricing = () => {
-  return <div></div>;
+  return <div className="pricing-page"></div>;
 };
 
 export default Pricing;
