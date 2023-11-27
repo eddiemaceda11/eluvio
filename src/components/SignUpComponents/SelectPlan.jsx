@@ -114,6 +114,7 @@ const SelectPlan = () => {
       <div className="select-plan-cards">
         {planCards.map((card) => (
           <SelectPlanCard
+            // Add key
             card={card}
             checked={checked}
           />
