@@ -6,3 +6,9 @@ import Faqs from "../components/Faqs";
 import Reviews from "../components/Reviews";
 import Companies from "../components/Companies";
 import SignUp from "../components/SignUpComponents/SignUp";
+
+const Pricing = () => {
+  return <div></div>;
+};
+
+export default Pricing;
