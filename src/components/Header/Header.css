@@ -1,4 +1,8 @@
 header {
+}
+
+header .container {
+  position: relative;
   display: flex;
   align-items: center;
   height: 85px;
@@ -6,7 +10,10 @@ header {
   padding: 0rem 4rem;
   position: relative;
 
+  /* border: 1px solid red; */
+  width: 1320px;
   color: #001633;
+  margin: 0 auto;
 }
 
 header h1 {
