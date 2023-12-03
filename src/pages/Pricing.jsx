@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/Header/Header"; //update import git
 import Main from "../components/Main";
 import Hero from "../components/Hero";
 import BusinessPlan from "../components/BusinessPlan";
