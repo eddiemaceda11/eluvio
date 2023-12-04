@@ -1,0 +1,16 @@
+/* git add/update header media styles location */
+
+@media (max-width: 700px) {
+  header .container {
+    max-width: 100vw;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .header-nav,
+  .header-rs button {
+    display: none;
+  }
+}
