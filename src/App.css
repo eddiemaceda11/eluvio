@@ -25,11 +25,12 @@ main .container {
   gap: 4rem;
   margin: 0 auto;
   max-width: 1440px;
+  justify-content: center;
   /* border: 1px solid red; */
 }
 
 main .img-div {
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
 }
 
 .text-div {
@@ -130,11 +131,13 @@ main div img {
 /* Hero */
 .hero {
   height: 1100px;
+  max-width: 1440px;
   background-color: #ebf2fa;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .hero h2 {
@@ -202,7 +205,7 @@ main div img {
 /* Cards */
 .cards {
   height: 60rem;
-  width: 83%;
+  max-width: 83%;
   display: flex;
   justify-content: space-around;
 
@@ -287,6 +290,8 @@ main div img {
   justify-content: center;
   height: 1100px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 28rem;
   gap: 8rem;
 
@@ -828,6 +833,7 @@ input[type="checkbox"]:checked {
   background-color: #ebf2fa;
   height: 920px;
   margin: 0 auto;
+  max-width: 1440px;
   width: 100%;
 }
 
@@ -861,7 +867,7 @@ input[type="checkbox"]:checked {
 
 .faqs-item {
   border-bottom: 1px solid #000;
-  width: 800px;
+  /* width: 800px; */
 }
 
 .faqs-item-top {
@@ -926,7 +932,7 @@ input[type="checkbox"]:checked {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   /* GIT moved header media queries */
 
   /* Main */
@@ -941,6 +947,7 @@ input[type="checkbox"]:checked {
 
   main .img-div {
     margin-left: 0rem;
+    display: none;
   }
 
   .text-div {
@@ -981,7 +988,7 @@ input[type="checkbox"]:checked {
 
   /* HERO */
   .hero {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .hero h2 {
@@ -989,7 +996,8 @@ input[type="checkbox"]:checked {
   }
 
   /* CARDS */
-  .cards {
+  /* @700px */
+  /* .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1001,5 +1009,49 @@ input[type="checkbox"]:checked {
     background-color: #fff;
     padding: 3rem 2rem;
     border-top: 8px solid #01295f;
+  } */
+
+  .cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: center; */
   }
+
+  .card {
+    border: 1px solid #dfdfdf;
+    width: 270px;
+    height: 95%;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-top: 8px solid #01295f;
+  }
+
+  /* Signup section */
+  .signup-form-container {
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+
+  .steps-container {
+    width: 12rem;
+    /* margin-left: 0.5rem; */
+    margin-left: 0;
+    height: 100%;
+  }
+
+  .steps {
+    /* border: 1px solid red; */
+    width: 95%;
+    margin-left: 0.4rem;
+  }
+
+  .info-container {
+    /* border: 1px solid red;s */
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  /* FAQS */
 }
