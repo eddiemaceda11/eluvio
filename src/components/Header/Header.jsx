@@ -1,5 +1,5 @@
 import "./Header.css";
-import "./HeaderMobile.css"; // git import mobile header css
+import "./HeaderMobile.css"; // git import mobile header cssstat
 
 const Header = () => {
   return (
