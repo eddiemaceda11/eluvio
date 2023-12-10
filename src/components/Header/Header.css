@@ -11,7 +11,8 @@ header .container {
   position: relative;
 
   /* border: 1px solid red; */
-  width: 1320px;
+  /* max-width: 1320px; */
+  max-width: 1440px;
   color: #001633;
   margin: 0 auto;
 }
