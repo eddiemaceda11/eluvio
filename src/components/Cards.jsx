@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+
 const Card = ({ plan, planDesc, price, terms, features }) => {
+  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  console.log(windowSize[0]);
+
   return (
     <div className="card">
       <h2>{plan}</h2>
@@ -9,34 +27,38 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
       </div>
       <p>{terms}</p>
       <button>Select {plan}</button>
-      <div className="card-border"></div>
-      <ul className="card-info">
-        {features}
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>$1 + 10% transaction fee</li>
-        </div>
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>1 published product of each type (course, coaching, downloads)</li>
-        </div>
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>No-code course builder and web pages</li>
-        </div>
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>Student referrals</li>
-        </div>
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>Finance with integrated payment processing</li>
-        </div>
-        <div>
-          <i className="fa-regular fa-circle-check"></i>
-          <li>1 admin & author seat</li>
-        </div>
-      </ul>
+      {windowSize[0] > 850 && (
+        <>
+          <div className="card-border"></div>
+          <ul className="card-info">
+            {features}
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>$1 + 10% transaction fee</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>1 published product of each type (course, coaching, downloads)</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>No-code course builder and web pages</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>Student referrals</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>Finance with integrated payment processing</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>1 admin & author seat</li>
+            </div>
+          </ul>{" "}
+        </>
+      )}
     </div>
   );
 };
