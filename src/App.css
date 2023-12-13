@@ -305,7 +305,7 @@ main div img {
 .business-left {
   border: 1px solid #dfdfdf;
   border-top: 8px solid #01295f;
-  height: 70%;
+  height: 78%;
   width: 30%;
 
   padding: 0rem 2rem;
@@ -345,7 +345,7 @@ main div img {
   /* border: 1px solid #dfdfdf; */
   height: 85%;
   width: 30%;
-  margin-top: -2.2rem;
+  margin-top: -0.2rem;
   color: #01295f;
 }
 
@@ -399,7 +399,7 @@ main div img {
 
 .business-plan-terms {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   text-align: center;
   font-size: 12px;
   font-weight: 200;
@@ -408,7 +408,7 @@ main div img {
 
 .compare {
   position: absolute;
-  bottom: 4.5%;
+  bottom: 1.5%;
   border-bottom: 2px solid #01295f;
   padding-bottom: 2px;
   cursor: pointer;
@@ -904,6 +904,8 @@ input[type="checkbox"]:checked {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .reviews-container {
@@ -928,7 +930,64 @@ input[type="checkbox"]:checked {
 /* COMPANIES */
 .companies {
   height: 200px;
-  border: 1px solid red;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #fff;
+  display: flex;
+  position: relative;
+  /* gap: 0.5rem; */
+}
+
+.logos::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+  content: "";
+  z-index: 2;
+}
+
+.logos::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: flex;
+  /* gap: 0.5rem; */
+  white-space: nowrap;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
 }
 
 /* MEDIA QUERIES */
@@ -951,7 +1010,6 @@ input[type="checkbox"]:checked {
   }
 
   .text-div {
-    /* border: 1px solid red; */
     width: 80%;
     margin-top: 1rem;
     text-align: center;
@@ -1025,6 +1083,50 @@ input[type="checkbox"]:checked {
     background-color: #fff;
     padding: 3rem 2rem;
     border-top: 8px solid #01295f;
+  }
+
+  /* BUSINESS SECTION */
+  .business-plan {
+    gap: 3rem;
+    /* justify-content: space-around; */
+  }
+
+  .business-left {
+    width: 45%;
+  }
+
+  .business-left h2 {
+    font-size: 1.9rem;
+  }
+
+  .business-left h3 {
+    font-size: 17px;
+  }
+
+  .business-left div {
+    font-size: 4.4rem;
+  }
+
+  .business-left div span {
+    /* color: red; */
+  }
+
+  .business-right {
+    width: 40%;
+  }
+
+  .business-right .fa-circle-check {
+    margin-top: 0.3rem;
+  }
+
+  .business-right h2 {
+    font-size: 2rem;
+  }
+
+  .business-right ul {
+    margin-top: 1.5rem;
+    font-size: 17px;
+    gap: 0.7rem;
   }
 
   /* Signup section */
