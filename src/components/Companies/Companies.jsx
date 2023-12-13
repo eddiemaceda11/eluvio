@@ -1,4 +1,5 @@
 import Company from "./Company";
+import "./Companies.css";
 
 const dummyCompanyData = [
   {
