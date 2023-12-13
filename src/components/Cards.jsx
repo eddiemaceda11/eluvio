@@ -1,21 +1,8 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { WindowContext } from "../App";
 
 const Card = ({ plan, planDesc, price, terms, features }) => {
-  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  console.log(windowSize[0]);
+  const windowSize = useContext(WindowContext); // git import useContext and WindowContext
 
   return (
     <div className="card">
