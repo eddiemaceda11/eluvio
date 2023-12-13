@@ -66,3 +66,19 @@ header h1 {
   border-bottom: 3px solid #01295f;
   width: 60px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  header .container {
+    max-width: 100vw;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .header-nav,
+  .header-rs button {
+    display: none;
+  }
+}
