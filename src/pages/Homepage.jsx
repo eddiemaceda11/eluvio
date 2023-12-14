@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import Main from "../MainSection/Main";
+import Main from "../components/MainSection/Main";
 import Hero from "../components/Hero";
 import BusinessPlan from "../components/BusinessPlan";
 import Faqs from "../components/Faqs";
