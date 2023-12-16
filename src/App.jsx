@@ -1,7 +1,7 @@
 import "./App.css";
 import { createContext, useState, useEffect } from "react"; //imported git
 
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/Homepage/Homepage";
 
 export const WindowContext = createContext();
 
