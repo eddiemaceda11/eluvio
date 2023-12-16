@@ -4,7 +4,7 @@ import { createContext, useState, useEffect } from "react"; //imported git
 import Homepage from "./pages/Homepage/Homepage";
 import DashboardPage from "./pages/Dashboard/Dashboard";
 
-// context to check window width on resize
+// context to check window width on resize, for use in Cards component
 export const WindowContext = createContext();
 
 function App() {
