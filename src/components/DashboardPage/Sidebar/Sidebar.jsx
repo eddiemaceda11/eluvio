@@ -4,7 +4,7 @@ import "./Sidebar.css";
 // import { sidebarData } from "../../../data/dashboard/sidebar";
 
 export default function Dashboard() {
-  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(true);
 
   function toggleSidebar() {
     setSidebarIsOpen((prevState) => !prevState);
