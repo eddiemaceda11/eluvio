@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { WindowContext } from "../../App";
+import { WindowContext } from "../../App/App";
 
 const Card = ({ plan, planDesc, price, terms, features }) => {
   const windowSize = useContext(WindowContext); // git import useContext and WindowContext
