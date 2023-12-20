@@ -1,3 +1,5 @@
+import "./Tasks.css";
+
 export default function Tasks() {
   return (
     <section className="dashboard-tasks">
