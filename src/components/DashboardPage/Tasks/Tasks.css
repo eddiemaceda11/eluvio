@@ -1,77 +1,54 @@
-/* import "./Tasks.css"; */
+.dashboard-tasks {
+  height: 300px;
+  height: 42.5%;
+  border-radius: 4px;
+  margin-top: 2rem;
+  padding: 0.9rem 2rem 1rem 2rem;
+  /* box-shadow: 0px 0px 0px 5px rgb(214, 214, 214); */
+  box-shadow: 0px 0px 5px 1px rgb(221, 221, 221);
+  background-color: #ededed;
+  overflow: scroll;
+  /* overflow-clip-margin: 100px; */
+}
 
-export default function Tasks() {
-  return (
-    <section className="dashboard-tasks">
-      <TasksHeader />
-      <table className="dashboard-tasks-table">
-        <tr className="db-tasks-column-names">
-          <th>
-            <input type="checkbox" />
-          </th>
-          <th>Task name</th>
-          <th>Admin</th>
-          <th>Priority</th>
-          <th>Status</th>
-          <th>Created</th>
-          <th>Due by</th>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-      </table>
-    </section>
-  );
+/* TASKS COLUMN NAMES */
+.dashboard-tasks-table {
+  border: 1px solid red;
+  width: 100%;
+  /* height: 67%; */
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.db-tasks-column-names {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  justify-content: space-between;
+  color: var(--main-text-color);
+}
+
+th,
+td {
+  width: 30%;
+}
+
+.db-tasks-column-cells {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  color: #3f4d68;
+  font-weight: 500;
+}
+
+.db-tasks-column-names input {
+  /* margin-right: 1rem; */
+}
+
+.db-tasks-column-names p:nth-child(2) {
+  /* border: 1px solid red; */
 }
