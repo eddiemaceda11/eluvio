@@ -1,4 +1,5 @@
 import "./Tasks.css";
+import TasksHeader from "./TasksHeader/TasksHeader";
 
 export default function Tasks() {
   return (
