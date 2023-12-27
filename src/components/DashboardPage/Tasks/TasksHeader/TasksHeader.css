@@ -1,0 +1,41 @@
+/* Tasks Header */
+.db-tasks-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 25%;
+  /* border: 1px solid red; */
+  /* margin: 0rem 1.5rem; */
+}
+
+.db-tasks-header h2 {
+  font-size: 2rem;
+  color: var(--main-text-color);
+}
+
+.db-tasks-total,
+.db-tasks-done,
+.db-tasks-in-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.db-tasks-total {
+  margin-right: auto;
+}
+
+.db-tasks-done {
+}
+
+.db-tasks-in-progress {
+  margin: 0 3rem;
+}
+
+.db-add-tasks {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
