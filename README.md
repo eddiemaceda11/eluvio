@@ -5,7 +5,7 @@
 <table>
 <tr>
 <td align="center">
-  This is a project that I am currently designing and developing, with an enterprise SAAS company in mind. I plan to make this a full stack application, with a fully customizable dashboard 
+  This is a project that I am currently designing and developing, with an enterprise SAAS company in mind. I plan to make this a full stack application, with a fully customizable dashboard, using the React JS Library.
 </td>
 </tr>
 </table>
@@ -27,5 +27,5 @@ Here is a live demo : https://eluvio.netlify.app/
 - Recharts UI component library.
 - Customizable Dashboard with user login authentication.
 - React Router V6 for page navigation.
-- Custom database with the use of JSON server.
+- Custom REST api with the use of JSON server.
 - Responsive Design.
