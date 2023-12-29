@@ -1,8 +1,31 @@
-# React + Vite
+# eluvio
+![](<img width="1440" alt="eluvio-homepage" src="https://github.com/eddiemaceda11/eluvio/assets/106784988/17c3fa70-f761-4c1c-a8c8-ae38b6642a89">
+)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<table>
+<tr>
+<td align="center">
+  This is a project that I am currently designing and developing with an enterprise level SAAS company in mind. The website will have several pages and features, including a dashboard, which will allow for user login and customization.
+</td>
+</tr>
+</table>
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here is a live demo : https://eluvio.netlify.app/
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- React
+
+## Features
+
+- A Dashboard page designed by myself, with User login/authentication, customizable tasks, and the use of the Recharts UI component library.
+- Custom database with the use of JSON server.
+- Multi-step sign up form with full interactivity.
+- Responsive Design.
+
+
