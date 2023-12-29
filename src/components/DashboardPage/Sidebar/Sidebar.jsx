@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Sidebar.css";
 
-import { sidebarData } from "../../../data/dashboard/sidebar";
+import { sidebarData } from "../../../data/DashboardPage/sidebar";
 
 export default function Dashboard() {
   const [sidebarIsOpen, setSidebarIsOpen] = useState(true);
