@@ -4,6 +4,8 @@ import { createContext, useState, useEffect } from "react"; //imported git
 import Homepage from "../pages/Homepage/Homepage";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
 
+import { ModalContextProvider } from "../context/ModalContext";
+
 // context to check window width on resize, for use in Cards component
 export const WindowContext = createContext();
 
@@ -26,8 +28,10 @@ function App() {
 
   return (
     <WindowContext.Provider value={windowSize}>
-      {/* <Homepage /> */}
-      <DashboardPage />
+      <ModalContextProvider>
+        {/* <Homepage /> */}
+        <DashboardPage />
+      </ModalContextProvider>
     </WindowContext.Provider>
   );
 }
