@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -21,7 +22,9 @@ const Header = () => {
           <li>Pricing</li>
         </ul>
         <div className="header-rs">
-          <p>Dashboard</p>
+          <Link to="/dashboard">
+            <p>Dashboard</p>
+          </Link>
           <button>Start for free</button>
         </div>
       </div>
