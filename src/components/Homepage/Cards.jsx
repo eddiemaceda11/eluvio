@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { WindowContext } from "../../App/App";
+import { WindowContext } from "../../context/WindowContext";
 
 // const CardInfo = ({features, fee, audience, builder, refferals, finance, admins, cancel}) => {
 //   <>
@@ -36,8 +36,8 @@ import { WindowContext } from "../../App/App";
 // };
 
 const Card = ({ plan, planDesc, price, terms, features }) => {
-  const windowSize = useContext(WindowContext); // git import useContext and WindowContext
-
+  const { windowSize } = useContext(WindowContext); // git import useContext and WindowContext
+  console.log(`current is ${windowSize}`);
   return (
     <div className="card">
       <h2>{plan}</h2>

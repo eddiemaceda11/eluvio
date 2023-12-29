@@ -1,34 +1,15 @@
 import "./App.css";
-import { createContext, useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Homepage from "../pages/Homepage/Homepage";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
 
 import { ModalContextProvider } from "../context/ModalContext";
-
-// context to check window width on resize, for use in Cards component
-export const WindowContext = createContext();
+import { WindowContextProvider } from "../context/WindowContext";
 
 function App() {
-  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  console.log(windowSize[0]);
-
   return (
-    <WindowContext.Provider value={windowSize}>
+    <WindowContextProvider>
       <ModalContextProvider>
         <Routes>
           <Route
@@ -41,7 +22,7 @@ function App() {
           />
         </Routes>
       </ModalContextProvider>
-    </WindowContext.Provider>
+    </WindowContextProvider>
   );
 }
 
