@@ -11,7 +11,7 @@ const Main = () => {
         </div>
         <div className="text-div">
           <h1>Think ahead, and we'll help prepare you for the future</h1>
-          <p>We help tech leaders achieve audience engagement, maximize revenue streams, and streamline spending for unparalleled success</p>
+          <p>We help tech leaders achieve audience engagement, maximize revenue streams, and streamline spending for unparalleled success.</p>
           <p>Enter your email:</p>
           <div className="main-input-form">
             <input
