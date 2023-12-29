@@ -21,7 +21,11 @@ export default function TasksHeader() {
       </div>
       <div className="db-add-tasks">
         <h3>Add task</h3>
-        <i className="fa-solid fa-circle-plus" onClick={handleModalToggle}></i>
+        <i
+          className="fa-solid fa-circle-plus"
+          onClick={handleModalToggle}
+        ></i>
       </div>
     </div>
   );
+}
