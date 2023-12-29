@@ -1,6 +1,40 @@
 import { useContext } from "react";
 import { WindowContext } from "../../App/App";
 
+// const CardInfo = ({features, fee, audience, builder, refferals, finance, admins, cancel}) => {
+//   <>
+//     {features}
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>$1 + 10% transaction fee</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>1 published audience of each category (social, organic, members)</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>No-code course builder and web pages</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>Member referrals</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>Finance with integrated payment processing</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>1 admin & 3 users</li>
+//     </div>
+//     <div>
+//       <i className="fa-regular fa-circle-check"></i>
+//       <li>No-charge cancellation</li>
+//     </div>
+//   </>;
+// };
+
 const Card = ({ plan, planDesc, price, terms, features }) => {
   const windowSize = useContext(WindowContext); // git import useContext and WindowContext
 
@@ -42,6 +76,10 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
             <div>
               <i className="fa-regular fa-circle-check"></i>
               <li>1 admin & 3 users</li>
+            </div>
+            <div>
+              <i className="fa-regular fa-circle-check"></i>
+              <li>No-charge cancellation</li>
             </div>
           </ul>{" "}
         </>
