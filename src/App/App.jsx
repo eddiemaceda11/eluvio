@@ -1,5 +1,6 @@
 import "./App.css";
-import { createContext, useState, useEffect } from "react"; //imported git
+import { createContext, useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Homepage from "../pages/Homepage/Homepage";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
@@ -29,8 +30,16 @@ function App() {
   return (
     <WindowContext.Provider value={windowSize}>
       <ModalContextProvider>
-        <Homepage />
-        {/* <DashboardPage /> */}
+        <Routes>
+          <Route
+            path="/"
+            element={<Homepage />}
+          />
+          <Route
+            path="/dashboard"
+            element={<DashboardPage />}
+          />
+        </Routes>
       </ModalContextProvider>
     </WindowContext.Provider>
   );
