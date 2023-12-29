@@ -25,7 +25,7 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
             </div>
             <div>
               <i className="fa-regular fa-circle-check"></i>
-              <li>1 published product of each type (course, coaching, downloads)</li>
+              <li>1 published audience of each category (social, organic, members)</li>
             </div>
             <div>
               <i className="fa-regular fa-circle-check"></i>
@@ -33,7 +33,7 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
             </div>
             <div>
               <i className="fa-regular fa-circle-check"></i>
-              <li>Student referrals</li>
+              <li>Member referrals</li>
             </div>
             <div>
               <i className="fa-regular fa-circle-check"></i>
@@ -41,7 +41,7 @@ const Card = ({ plan, planDesc, price, terms, features }) => {
             </div>
             <div>
               <i className="fa-regular fa-circle-check"></i>
-              <li>1 admin & author seat</li>
+              <li>1 admin & 3 users</li>
             </div>
           </ul>{" "}
         </>
