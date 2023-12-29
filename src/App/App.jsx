@@ -29,8 +29,8 @@ function App() {
   return (
     <WindowContext.Provider value={windowSize}>
       <ModalContextProvider>
-        {/* <Homepage /> */}
-        <DashboardPage />
+        <Homepage />
+        {/* <DashboardPage /> */}
       </ModalContextProvider>
     </WindowContext.Provider>
   );
