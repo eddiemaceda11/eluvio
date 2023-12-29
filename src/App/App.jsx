@@ -26,7 +26,8 @@ function App() {
 
   return (
     <WindowContext.Provider value={windowSize}>
-      <Homepage />
+      {/* <Homepage /> */}
+      <DashboardPage />
     </WindowContext.Provider>
   );
 }
