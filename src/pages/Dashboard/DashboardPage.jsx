@@ -6,6 +6,10 @@ import Apps from "../../components/DashboardPage/Apps/Apps";
 
 import TaskModal from "../../components/DashboardPage/Tasks/TaskModal/TaskModal";
 
+import "./DashboardPage.css";
+import { useContext } from "react";
+import { ModalContext } from "../context/ModalContext";
+
 const DashboardPage = () => {
   const { modalOpen } = useContext(ModalContext);
 
