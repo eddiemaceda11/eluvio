@@ -1,8 +1,30 @@
-# React + Vite
+# eluvio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Alt text](public/eluvio-homepage.png)
 
-Currently, two official plugins are available:
+<table>
+<tr>
+<td align="center">
+  This is a project that I am currently designing and developing, with an enterprise SAAS company in mind. 
+</td>
+</tr>
+</table>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+
+Here is a live demo : https://eluvio.netlify.app/
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- React
+
+## Features
+
+- Implements the Search API.
+- Uses Fetch API and Async/Await to make HTTP Requests to the Search API.
+- Search bar with search button to allow for custom user input.
+- "Add to cart" functionality that allows the User to add items to their shopping cart.
+- Responsive Design.
