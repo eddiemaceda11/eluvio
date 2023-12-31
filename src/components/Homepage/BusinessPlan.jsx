@@ -3,7 +3,7 @@ const BusinessPlan = () => {
     <section className="business-plan">
       <div className="business-left">
         <h2>Enterprise Plan</h2>
-        <h3>Our most advanced leaders deserve our most advanced feature yet. Scale your enterprise on the Enterprise plan.</h3>
+        <h3>Our most advanced leaders deserve our most advanced feature yet. Scale your business on the Enterprise plan.</h3>
         <div>
           $499
           <span>/month</span>
