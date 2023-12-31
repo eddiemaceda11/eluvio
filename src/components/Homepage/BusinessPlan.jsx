@@ -3,7 +3,7 @@ const BusinessPlan = () => {
     <section className="business-plan">
       <div className="business-left">
         <h2>Enterprise Plan</h2>
-        <h3>Our most advanced creators deserve our most advanced feature yet. Scale your enterprise on the Business plan.</h3>
+        <h3>Our most advanced leaders deserve our most advanced feature yet. Scale your enterprise on the Enterprise plan.</h3>
         <div>
           $499
           <span>/month</span>
@@ -16,11 +16,11 @@ const BusinessPlan = () => {
         <ul>
           <div>
             <i className="fa-regular fa-circle-check"></i>
-            <li>Unlimited courses, coaching products, and digital downloads</li>
+            <li>Unlimited support, exclusive products, and digital downloads</li>
           </div>
           <div>
             <i className="fa-regular fa-circle-check"></i>
-            <li>20 admin & author seats</li>
+            <li>20 admin & user accounts</li>
           </div>
           <div>
             <i className="fa-regular fa-circle-check"></i>
@@ -32,10 +32,10 @@ const BusinessPlan = () => {
           </div>
           <div>
             <i className="fa-regular fa-circle-check"></i>
-            <li>Bulk classroom enrollment</li>
+            <li>Access to exclusive events and webinars</li>
           </div>
         </ul>
-        <button onClick={() => console.log("hi")}>Select Business</button>
+        <button onClick={() => console.log("hi")}>Select Enterprise</button>
         <p>Or select business monthly - $699/month</p>
       </div>
       <p className="business-plan-terms">
