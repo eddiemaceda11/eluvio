@@ -24,8 +24,7 @@ const faqsList = [
   {
     id: 4,
     question: "Who uses Eluvio?",
-    answer:
-      "Eluvio offers creators, influencers, entrepreneurs, and business owners the best, most flexible way to share and tap into the value of their experience and expertise with their audience and customers. Yoga instructors, musicians, financial advisors, watercolor artists, mountain climbers, product marketing coaches... you name it.",
+    answer: "Eluvio offers creators, influencers, entrepreneurs, and business owners the best, most flexible way to share and tap into the value of their experience and expertise with their audience and customers.",
   },
 ];
 
