@@ -10,6 +10,11 @@
   font-family: "Raleway", sans-serif;
 }
 
+:root {
+  /* --main-text-color: #01295f; */
+  --main-text-color: #002556;
+}
+
 ul {
   list-style: none;
 }
