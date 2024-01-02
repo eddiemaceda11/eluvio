@@ -132,6 +132,5 @@
 
 .sidebar-selection {
   font-weight: 500;
-  color: #3f4d68;
-  /* color: var(--main-text-color); */
+  color: var(--main-text-color);
 }
