@@ -6,12 +6,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: "Lato", sans-serif; */
+
   font-family: "Raleway", sans-serif;
 }
 
 :root {
-  /* --main-text-color: #01295f; */
   --main-text-color: #002556;
 }
 
