@@ -29,7 +29,6 @@ const faqsList = [
 ];
 
 const Faqs = () => {
-  // const [faqsList, setFaqsList] = useState(faqsArray);
   const [currentOpen, setCurrentOpen] = useState(null);
 
   return (
