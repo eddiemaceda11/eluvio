@@ -226,6 +226,7 @@ main div img {
   background-color: #fff;
   padding: 3rem 2rem;
   border-top: 8px solid #01295f;
+  box-shadow: 1px 1px 9px 1px rgb(231, 231, 231);
 }
 
 .card h2 {
