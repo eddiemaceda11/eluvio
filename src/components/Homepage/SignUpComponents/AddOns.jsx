@@ -24,7 +24,7 @@ const addOnsData = [
   },
 ];
 
-const AddOns = () => {
+const AddOns = ({ onNextStep, onPrevStep }) => {
   return (
     <div className="add-ons">
       <h1>Pick add-ons</h1>
@@ -34,8 +34,18 @@ const AddOns = () => {
           <AddOnItem addOnsData={obj} />
         ))}
       </div>
-      <button className="plan-prev-step-btn">Go Back</button>
-      <button className="plan-next-step-btn">Next Step</button>
+      <button
+        className="plan-prev-step-btn"
+        onClick={onPrevStep}
+      >
+        Go Back
+      </button>
+      <button
+        className="plan-next-step-btn"
+        onClick={onNextStep}
+      >
+        Next Step
+      </button>
     </div>
   );
 };

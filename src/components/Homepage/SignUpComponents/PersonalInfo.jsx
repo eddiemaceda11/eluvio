@@ -1,4 +1,4 @@
-const PersonalInfo = () => {
+const PersonalInfo = ({ onNextStep }) => {
   return (
     <div className="personal-info">
       <h1>Personal Info</h1>
@@ -26,7 +26,12 @@ const PersonalInfo = () => {
           />
         </div>
       </form>
-      <button className="plan-next-step-btn">Next Step</button>
+      <button
+        className="plan-next-step-btn"
+        onClick={onNextStep}
+      >
+        Next Step
+      </button>
     </div>
   );
 };

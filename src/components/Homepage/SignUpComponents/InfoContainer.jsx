@@ -3,13 +3,23 @@ import SelectPlan from "./SelectPlan";
 import AddOns from "./AddOns";
 import Summary from "./Summary";
 
-const InfoContainer = ({ currentStep }) => {
+const InfoContainer = ({ currentStep, onNextStep, onPrevStep }) => {
   return (
     <section className="info-container">
-      {currentStep === 1 && <PersonalInfo />}
-      {currentStep === 2 && <SelectPlan />}
-      {currentStep === 3 && <AddOns />}
-      {currentStep === 4 && <Summary />}
+      {currentStep === 1 && <PersonalInfo onNextStep={onNextStep} />}
+      {currentStep === 2 && (
+        <SelectPlan
+          onNextStep={onNextStep}
+          onPrevStep={onPrevStep}
+        />
+      )}
+      {currentStep === 3 && (
+        <AddOns
+          onNextStep={onNextStep}
+          onPrevStep={onPrevStep}
+        />
+      )}
+      {currentStep === 4 && <Summary onPrevStep={onPrevStep} />}
     </section>
   );
 };

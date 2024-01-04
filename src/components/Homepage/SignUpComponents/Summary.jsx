@@ -1,4 +1,4 @@
-const Summary = () => {
+const Summary = ({ onPrevStep }) => {
   return (
     <div className="summary">
       <h1>Finishing up</h1>
@@ -22,7 +22,12 @@ const Summary = () => {
           <span>$2/mo</span>
         </div>
       </div>
-      <button className="plan-prev-step-btn">Go Back</button>
+      <button
+        className="plan-prev-step-btn"
+        onClick={onPrevStep}
+      >
+        Go Back
+      </button>
       <button className="plan-next-step-btn">Confirm</button>
     </div>
   );

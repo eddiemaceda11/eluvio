@@ -99,7 +99,7 @@ const planCards = [
   },
 ];
 
-const SelectPlan = () => {
+const SelectPlan = ({ onNextStep, onPrevStep }) => {
   // checked = monthly
   const [checked, setChecked] = useState(true);
 
@@ -136,8 +136,18 @@ const SelectPlan = () => {
         </div>
         <p className={!checked ? "active plan-length" : "plan-length"}>Yearly</p>
       </div>
-      <button className="plan-prev-step-btn">Go Back</button>
-      <button className="plan-next-step-btn">Next Step</button>
+      <button
+        className="plan-prev-step-btn"
+        onClick={onPrevStep}
+      >
+        Go Back
+      </button>
+      <button
+        className="plan-next-step-btn"
+        onClick={onNextStep}
+      >
+        Next Step
+      </button>
     </div>
   );
 };
