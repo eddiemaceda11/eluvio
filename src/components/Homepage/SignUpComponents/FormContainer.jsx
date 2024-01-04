@@ -19,7 +19,7 @@ export default function FormContainer({ steps }) {
       <div className="signup-form-container">
         <StepsContainer
           steps={steps}
-          // currentStep={currentStep}
+          currentStep={currentStep}
           // onClick={changeCurrentStep}
         />
         <InfoContainer currentStep={currentStep} />
