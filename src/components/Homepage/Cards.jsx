@@ -35,11 +35,11 @@ import { WindowContext } from "../../context/WindowContext";
 //   </>;
 // };
 
-const Card = ({ plan, planDesc, price, terms, features }) => {
+const Card = ({ plan, planDesc, price, terms, features, activeCard }) => {
   const { windowSize } = useContext(WindowContext); // git import useContext and WindowContext
   console.log(`current is ${windowSize}`);
   return (
-    <div className="card">
+    <div className={activeCard === "free" ? "card active" : "card"}>
       <h2>{plan}</h2>
       <h3>{planDesc}</h3>
       <div className="price">
@@ -98,6 +98,7 @@ const Cards = () => {
         price="0"
         terms="No credit card required"
         features="Free plan features include:"
+        activeCard={"free"}
       />
       <Card
         plan="Basic"
