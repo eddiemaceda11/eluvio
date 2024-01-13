@@ -55,7 +55,7 @@ const HeaderDropdown = () => {
             </div>
             <div className="rs-nav-links">
               <img src="https://www.datocms-assets.com/67254/1694616705-student-engagement.svg" />
-              <li>Student Experience</li>
+              <li>User Accounts</li>
             </div>
             <div className="rs-nav-links">
               <img src="https://www.datocms-assets.com/67254/1693405126-advanced-features.svg" />
