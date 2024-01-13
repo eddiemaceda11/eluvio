@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeaderDropdown from "./HeaderDropdown";
 import "./Header.css";
 
 const Header = () => {
@@ -27,6 +28,7 @@ const Header = () => {
           </Link>
           <button>Start for free</button>
         </div>
+        <HeaderDropdown />
       </div>
     </header>
   );

@@ -1,0 +1,129 @@
+.dropdown {
+  position: absolute;
+  display: flex;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0px 1.2px 4px 0.6px rgba(55, 55, 55, 0.185);
+  width: 65%;
+  height: 362px;
+  bottom: -433%;
+  left: 17%;
+  background-color: #fff;
+  z-index: 1;
+  gap: 3rem;
+}
+
+.dropdown-left {
+  width: 30%;
+  margin-left: 3.5rem;
+}
+
+.dropdown-left h3 {
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  color: rgb(159, 159, 159);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.dropdown-left ul {
+  color: #001633;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.dropdown-left a {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 0.6rem 0;
+  width: 100%;
+  font-weight: 500;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  color: #1b5cb1;
+  cursor: pointer;
+}
+
+.dropdown-left a img {
+  margin-bottom: 2px;
+  margin-left: 3.5px;
+}
+
+.dropdown-right {
+  width: 55%;
+  margin-right: 3.5rem;
+}
+
+.dropdown-right h3 {
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  color: rgb(159, 159, 159);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.dropdown-right ul {
+  color: #001633;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.dropdown-right ul div {
+  gap: 1.2rem;
+}
+
+.rs-nav-links {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.rs-nav-links:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.rs-nav-links img {
+  height: 22px;
+  width: 22px;
+  margin-right: -8px;
+}
+
+.rs-nav-links li {
+  margin-top: 2px;
+}
+
+.dropdown-right a {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 0.6rem 0;
+  width: 100%;
+  font-weight: 500;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  color: #1b5cb1;
+  cursor: pointer;
+}
+
+.dropdown-right a img {
+  margin-bottom: 2px;
+  margin-left: 3px;
+}
