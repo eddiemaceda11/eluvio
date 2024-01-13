@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ModalContext } from "../../../../context/ModalContext";
 import "./TaskModal.css";
 
 const allTasks = {};
@@ -18,6 +19,8 @@ export default function TaskModal() {
   const [priority, setPriority] = useState("");
   const [status, setStatus] = useState("");
   const [due, setDue] = useState("");
+
+  const { handleModalToggle } = useContext(ModalContext);
 
   console.log(tasks);
 
