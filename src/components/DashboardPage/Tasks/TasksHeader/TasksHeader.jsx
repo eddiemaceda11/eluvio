@@ -19,7 +19,10 @@ export default function TasksHeader() {
         <h2>5</h2>
         <h4>In progress</h4>
       </div>
-      <div className="db-add-tasks">
+      <div
+        className="db-add-tasks"
+        onClick={handleModalToggle}
+      >
         <h3>Add task</h3>
         <i
           className="fa-solid fa-circle-plus"

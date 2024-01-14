@@ -40,6 +40,12 @@ export default function TaskModal() {
   return (
     <div className="task-modal">
       <div className="task-modal-container">
+        <button
+          className="task-modal-close"
+          onClick={handleModalToggle}
+        >
+          x
+        </button>
         <div>
           <p>Task Name</p>
           <input
