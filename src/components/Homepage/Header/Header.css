@@ -10,8 +10,6 @@ header .container {
   padding: 0rem 4rem;
   position: relative;
 
-  /* border: 1px solid red; */
-  /* max-width: 1320px; */
   max-width: 1440px;
   color: #001633;
   margin: 0 auto;
@@ -25,8 +23,10 @@ header h1 {
 
 .header-nav {
   display: flex;
-  gap: 3rem;
+  /* gap: 3rem; */
   margin-left: 6rem;
+  /* border: 1px solid blue; */
+  height: 100%;
 }
 
 .header-nav li {
@@ -35,8 +35,11 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 6px;
-  height: 30px;
+  /* height: 30px; */
+  width: 8rem;
+  height: 100%;
   cursor: pointer;
+  /* border: 1px solid red; */
 }
 
 .header-nav li img {
