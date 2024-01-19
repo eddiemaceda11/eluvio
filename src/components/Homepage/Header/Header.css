@@ -23,9 +23,7 @@ header h1 {
 
 .header-nav {
   display: flex;
-  /* gap: 3rem; */
   margin-left: 6rem;
-  /* border: 1px solid blue; */
   height: 100%;
 }
 
