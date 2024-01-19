@@ -31,7 +31,7 @@ const Header = () => {
           </Link>
           <button>Start for free</button>
         </div>
-        {dropdownActive ? <HeaderDropdown /> : ""}
+        <HeaderDropdown dropdownActive={dropdownActive} />
       </div>
     </header>
   );

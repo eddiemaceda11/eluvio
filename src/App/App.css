@@ -238,6 +238,7 @@ main div img {
 .card h2 {
   font-weight: 400;
   font-size: 2.2rem;
+  text-align: start;
 }
 
 .card h3 {
@@ -1103,7 +1104,7 @@ input[type="checkbox"]:checked {
   /* FAQS */
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .main-input-form button {
     padding: 1.1rem 1.2rem;
   }
@@ -1116,8 +1117,6 @@ input[type="checkbox"]:checked {
   .card h2 {
     font-weight: 400;
     font-size: 2.2rem;
-    text-align: start;
-    /* margin-left: -4rem; */
     width: 100%;
   }
 

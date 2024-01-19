@@ -1,8 +1,8 @@
 import "./dropdown.css";
 
-const HeaderDropdown = () => {
+const HeaderDropdown = ({ dropdownActive }) => {
   return (
-    <div className="dropdown">
+    <div className={dropdownActive ? "dropdown active" : "dropdown"}>
       <div className="dropdown-left">
         <h3>Our feature products</h3>
         <ul>
