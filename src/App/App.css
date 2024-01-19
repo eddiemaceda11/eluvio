@@ -147,6 +147,7 @@ main div img {
   font-size: 3.6rem;
   font-weight: 500;
   color: #01295f;
+  text-align: center;
 }
 
 .features-text {
@@ -291,6 +292,16 @@ main div img {
 
 .card-info .fa-circle-check {
   margin-top: 2.4px;
+}
+
+.card button {
+  border: none;
+  margin-top: 3rem;
+  padding: 1.3rem 1.8rem;
+  border-radius: 0.4rem;
+  background-color: #8fb8ed;
+  font-size: 17px;
+  color: #001633;
 }
 
 /* Business */
@@ -1090,4 +1101,62 @@ input[type="checkbox"]:checked {
   }
 
   /* FAQS */
+}
+
+@media (max-width: 450px) {
+  .main-input-form button {
+    padding: 1.1rem 1.2rem;
+  }
+
+  /*  */
+  .card {
+    width: 200px;
+  }
+
+  .card h2 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    text-align: start;
+    /* margin-left: -4rem; */
+    width: 100%;
+  }
+
+  .price {
+    padding-top: 5rem;
+    font-size: 2.9rem;
+    margin-left: -3px;
+  }
+
+  .price span {
+    font-size: 1rem;
+  }
+
+  .card button {
+    padding: 1.1rem 1rem;
+    margin-top: 2.1rem;
+  }
+
+  /*  */
+  .business-left {
+    height: 65%;
+    width: 80%;
+  }
+
+  .business-right {
+    display: none;
+  }
+
+  .business-plan-terms {
+    bottom: 10%;
+    width: 80%;
+  }
+
+  .compare {
+    bottom: 4.3%;
+  }
+
+  /*  */
+  .signup-section {
+    display: none;
+  }
 }
