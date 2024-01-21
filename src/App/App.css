@@ -606,6 +606,7 @@ main div img {
   box-shadow: 1px 1px 8px 3px rgba(197, 197, 197, 0.3);
   background-color: hsl(213, 96%, 18%);
   color: #fff;
+  cursor: pointer;
 }
 
 .plan-prev-step-btn {
@@ -613,6 +614,7 @@ main div img {
 
   background-color: transparent;
   color: rgb(180, 180, 180);
+  cursor: pointer;
 }
 
 /* SelectPlan */
