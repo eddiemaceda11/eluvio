@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Array of FAQS questions and answers
 const faqsList = [
   {
     id: 0,
@@ -29,6 +30,7 @@ const faqsList = [
 ];
 
 const Faqs = () => {
+  // state to determine which FAQ div is currently open
   const [currentOpen, setCurrentOpen] = useState(null);
 
   return (
@@ -52,8 +54,10 @@ const Faqs = () => {
 };
 
 const FaqsItem = ({ num, question, answer, currentOpen, onOpen }) => {
+  // determine if the current Faqs item is open
   const isOpen = num === currentOpen;
 
+  // update and open the proper FAQS item div on click
   function handleToggle() {
     onOpen(isOpen ? null : num);
   }

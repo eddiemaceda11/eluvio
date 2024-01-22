@@ -36,8 +36,9 @@ import { WindowContext } from "../../context/WindowContext";
 // };
 
 const Card = ({ plan, planDesc, price, terms, features, activeCard }) => {
-  const { windowSize } = useContext(WindowContext); // git import useContext and WindowContext
-  console.log(`current is ${windowSize}`);
+  // Context to get window width for adjusting the display of the cards
+  const { windowSize } = useContext(WindowContext);
+
   return (
     <div className={activeCard === "free" ? "card active" : "card"}>
       <h2>{plan}</h2>

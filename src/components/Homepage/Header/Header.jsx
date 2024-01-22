@@ -4,6 +4,7 @@ import "./Header.css";
 import { useState } from "react";
 
 const Header = () => {
+  // state for header dropdown
   const [dropdownActive, setDropdownActive] = useState(false);
 
   return (
