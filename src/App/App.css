@@ -941,10 +941,7 @@ input[type="checkbox"]:checked {
 
 /* MEDIA QUERIES */
 @media (max-width: 850px) {
-  /* GIT moved header media queries */
-
   /* Main */
-
   main {
     height: auto;
     display: flex;
