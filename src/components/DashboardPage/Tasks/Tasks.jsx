@@ -50,28 +50,6 @@ export default function Tasks() {
           <td>12/15/23</td>
           <td>12/19/23</td>
         </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
-        <tr className="db-tasks-column-cells">
-          <td>
-            <input type="checkbox" />
-          </td>
-          <td>Complete assignment</td>
-          <td>Eddie M.</td>
-          <td>High</td>
-          <td>In progress</td>
-          <td>12/15/23</td>
-          <td>12/19/23</td>
-        </tr>
       </table>
     </section>
   );
