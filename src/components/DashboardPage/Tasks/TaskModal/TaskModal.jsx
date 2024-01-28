@@ -35,6 +35,8 @@ export default function TaskModal() {
         due,
       },
     ]);
+
+    handleModalToggle();
   };
 
   return (
