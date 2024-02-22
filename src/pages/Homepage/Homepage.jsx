@@ -1,4 +1,4 @@
-import Header from "../../components/Homepage/Header/Header";
+import Header from "../../components/Homepage/Header/Header.tsx";
 import Main from "../../components/Homepage/MainSection/Main";
 import Hero from "../../components/Homepage/Hero";
 import BusinessPlan from "../../components/Homepage/BusinessPlan";
