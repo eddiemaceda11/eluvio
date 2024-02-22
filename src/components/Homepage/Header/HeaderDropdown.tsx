@@ -1,6 +1,10 @@
 import "./dropdown.css";
 
-const HeaderDropdown = ({ dropdownActive }) => {
+type DropdownProps = {
+  dropdownActive: boolean;
+};
+
+const HeaderDropdown = ({ dropdownActive }: DropdownProps) => {
   return (
     <div className={dropdownActive ? "dropdown active" : "dropdown"}>
       <div className="dropdown-left">

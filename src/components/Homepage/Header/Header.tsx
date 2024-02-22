@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import HeaderDropdown from "./HeaderDropdown";
+import HeaderDropdown from "./HeaderDropdown.tsx";
 import "./Header.css";
 
 const Header = () => {
