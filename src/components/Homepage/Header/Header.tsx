@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import HeaderDropdown from "./HeaderDropdown";
@@ -6,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
   // state for header dropdown
-  const [dropdownActive, setDropdownActive] = useState(false);
+  const [dropdownActive, setDropdownActive] = useState<boolean>(false);
 
   return (
     <header>
