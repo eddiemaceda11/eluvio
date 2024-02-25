@@ -1,8 +1,9 @@
+import { Header } from "../../components/FinancialsPage/Header/Header";
+
 const FinancialsPage = () => {
   return (
     <div>
-      {/* <Header /> */}
-      hi
+      <Header />
     </div>
   );
 };
