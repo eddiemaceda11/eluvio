@@ -1,7 +1,8 @@
 const FinancialsPage = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      hi
     </div>
   );
 };
