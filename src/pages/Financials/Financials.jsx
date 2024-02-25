@@ -1,3 +1,9 @@
 const FinancialsPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
+
+export default FinancialsPage;
