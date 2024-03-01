@@ -1,0 +1,131 @@
+.main-cards {
+  background-color: rgb(250, 250, 250);
+  height: auto;
+}
+
+.main-cards .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* margin: 0 2rem; */
+  margin: auto;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.main-cards .container i {
+  position: absolute;
+  top: 0;
+}
+
+.main-cards dialog {
+  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+  /* top: 30%; */
+
+  top: 0;
+  z-index: 1;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+dialog form {
+  border: 1px solid red;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  flex-direction: column;
+}
+
+dialog form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog form div label {
+  /* background-color: red; */
+  width: 1rem;
+}
+
+dialog form div input {
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 100%;
+  border: none;
+  background-color: rgb(230, 230, 230);
+}
+
+/* CARD */
+
+.main-card {
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 0px rgba(170, 170, 170, 0.5);
+  width: 215px;
+  height: 245px;
+  background: white;
+  position: relative;
+  padding: 0.6rem;
+}
+
+.main-coin-info h2 {
+  color: rgb(17, 22, 71);
+}
+
+.main-coin-info h2:first-child {
+  padding-bottom: 3px;
+}
+
+.main-coin-info h2:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 1.4rem;
+}
+
+.main-usd-symbol {
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+}
+
+.main-coin-info h2:nth-child(3) {
+  position: relative;
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 8px;
+  padding-left: 1rem;
+}
+
+.main-coin-info h2:last-child {
+  position: relative;
+  font-weight: 300;
+  font-size: 27px;
+  padding-left: 8px;
+}
+
+.main-coin-img {
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+  box-shadow: 1px 1px 8px 0px rgba(170, 170, 170, 0.5);
+  height: 48px;
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+}
