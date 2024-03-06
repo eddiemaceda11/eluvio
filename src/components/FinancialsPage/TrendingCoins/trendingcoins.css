@@ -1,0 +1,73 @@
+.trending-coins {
+  height: 430px;
+  min-width: 350px;
+  padding: 1rem;
+  box-shadow: 1px 1px 8px 0px rgba(170, 170, 170, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container {
+  overflow: scroll;
+  height: 90%;
+}
+
+.trending-coins table {
+  width: 100%;
+}
+
+.table-coin-name {
+  text-align: start;
+  padding-left: 18px;
+}
+
+thead {
+  font-size: 12px;
+  color: rgb(104, 104, 104);
+  text-transform: uppercase;
+}
+
+thead tr {
+  /* background-color: red; */
+  height: 40px;
+}
+
+tbody {
+  text-align: center;
+  /* border: 1px solid red;
+  background-color: red; */
+}
+
+.table-coin-img-name {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.table-coin-img-name img {
+  padding-right: 8px;
+}
+
+td {
+  font-size: 12px;
+  height: 28px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+
+.trending-coins h2 {
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.trending-coin {
+  border: 1px solid blue;
+  display: flex;
+}
+
+.trending-coin p:first-child {
+}
+
+th {
+  width: 0;
+}

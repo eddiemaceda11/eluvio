@@ -26,7 +26,7 @@
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 120s linear infinite;
+  animation: scroll 500s linear infinite;
 }
 
 @keyframes scroll {

@@ -5,6 +5,10 @@ import { MainCards } from "../../components/FinancialsPage/MainCards/MainCards";
 
 import { fetchStocks } from "../../services/stocks";
 import { fetchMainCardCoins } from "../../services/maincoins";
+import { fetchTrendingCoins } from "../../services/trendingcoins";
+import { TrendingCoins } from "../../components/FinancialsPage/TrendingCoins/TrendingCoins";
+
+import "./Financials.css";
 
 export type StockType = {
   symbol: string;
@@ -21,9 +25,17 @@ export type MainCoinType = {
   coinImg: string;
 };
 
+export type TrendingCoinType = {
+  coinName: string;
+  coinSymbol: string;
+  coinPrice: string;
+  percentage: string;
+  coinImg: string;
+};
+
 const FinancialsPage = () => {
   // // state for trending crypto coins
-  // const [trendingCoins, setTrendingCoins] = useState<TrendingCoinType[]>([]);
+  const [trendingCoins, setTrendingCoins] = useState<TrendingCoinType[]>([]);
   // // state for main coins at the top
   const [mainCoins, setMainCoins] = useState<MainCoinType[]>([]);
   // // state for market news
@@ -33,7 +45,7 @@ const FinancialsPage = () => {
 
   useEffect(() => {
     fetchMainCardCoins(setMainCoins);
-    // fetchTrendingCoins(setTrendingCoins);
+    fetchTrendingCoins(setTrendingCoins);
     // fetchMarketNews(setMarketNews);
     fetchStocks(setStocks);
   }, []);
@@ -44,7 +56,9 @@ const FinancialsPage = () => {
       <Header />
       <Carousel stocks={stocks} />
       <MainCards coins={mainCoins} />
-      <div className="investments-container"></div>
+      <div className="investments-container">
+        <TrendingCoins coins={trendingCoins} />
+      </div>
     </div>
   );
 };
