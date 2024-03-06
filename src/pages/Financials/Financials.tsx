@@ -44,6 +44,7 @@ const FinancialsPage = () => {
       <Header />
       <Carousel stocks={stocks} />
       <MainCards coins={mainCoins} />
+      <div className="investments-container"></div>
     </div>
   );
 };
