@@ -1,0 +1,85 @@
+.scroller {
+  max-width: 1400px;
+  border-top: 1px solid rgb(207, 207, 207);
+  border-bottom: 1px solid rgb(207, 207, 207);
+  margin: 0 auto;
+  height: 75px;
+  z-index: 1;
+}
+
+.scroller__inner {
+  /* padding for top and bottom */
+  /* padding-block: 1rem; */
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  /* gap: 1rem; */
+  /* border: 1px solid red; */
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+  mask: linear-gradient(90 deg, transparent, white 1%, white 99%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 120s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-49.8% - 0.5rem));
+    /* transform: translate(calc(-50% - 0.5rem)); */
+  }
+}
+
+/*  */
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: var(--clr-primary-400);
+  /* border-radius: 0.5rem; */
+  outline: 1px solid rgb(240, 240, 240);
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  width: 7.5rem;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.tag-list li h3 {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tag-list li h4 {
+  font-size: 9px;
+  font-weight: 400;
+  color: rgb(172, 172, 172);
+}
+
+.scroller-card-numbers {
+  display: flex;
+  gap: 2px;
+}
+
+.scroller-card-numbers h5:first-child {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.scroller-card-numbers :nth-child(2) {
+  font-size: 11px;
+  font-weight: 400;
+}
