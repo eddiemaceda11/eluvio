@@ -1,41 +1,16 @@
 import { useContext } from "react";
 import { WindowContext } from "../../context/WindowContext";
 
-// const CardInfo = ({features, fee, audience, builder, refferals, finance, admins, cancel}) => {
-//   <>
-//     {features}
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>$1 + 10% transaction fee</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>1 published audience of each category (social, organic, members)</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>No-code course builder and web pages</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>Member referrals</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>Finance with integrated payment processing</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>1 admin & 3 users</li>
-//     </div>
-//     <div>
-//       <i className="fa-regular fa-circle-check"></i>
-//       <li>No-charge cancellation</li>
-//     </div>
-//   </>;
-// };
+type CardProps = {
+  plan: string;
+  planDesc: string;
+  price: string;
+  terms: string;
+  features: string;
+  activeCard?: string;
+};
 
-const Card = ({ plan, planDesc, price, terms, features, activeCard }) => {
+const Card = ({ plan, planDesc, price, terms, features, activeCard }: CardProps) => {
   // Context to get window width for adjusting the display of the cards
   const { windowSize } = useContext(WindowContext);
 
