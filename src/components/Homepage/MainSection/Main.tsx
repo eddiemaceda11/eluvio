@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Main = () => {
   // state for text value of email input box
-  const [currentEmail, setCurrentEmail] = useState("");
+  const [currentEmail, setCurrentEmail] = useState<string>("");
 
   return (
     <main>

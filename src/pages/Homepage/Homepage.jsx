@@ -16,7 +16,7 @@ function Homepage() {
       <BusinessPlan />
       <SignUp />
       <Faqs />
-      <Reviews />
+      {/* <Reviews /> */}
       <Companies />
     </>
   );
