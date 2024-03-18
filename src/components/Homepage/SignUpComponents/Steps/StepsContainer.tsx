@@ -1,11 +1,10 @@
 import Steps from "./Steps";
 
-const StepsContainer = ({ steps, currentStep, onClick }) => {
+import { type StepsProps } from "../FormContainer";
+
+const StepsContainer = ({ steps }: StepsProps, currentStep: number) => {
   return (
-    <div
-      className="steps-container"
-      onClick={onClick}
-    >
+    <div className="steps-container">
       <Steps
         steps={steps}
         currentStep={currentStep}

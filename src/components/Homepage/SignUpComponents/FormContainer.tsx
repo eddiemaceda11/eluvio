@@ -2,8 +2,17 @@ import { useState } from "react";
 import StepsContainer from "./Steps/StepsContainer";
 import InfoContainer from "./InfoContainer";
 
-export default function FormContainer({ steps }) {
-  const [currentStep, setCurrentStep] = useState(1);
+export type StepsObjProps = {
+  step: number;
+  label: string;
+};
+
+export type StepsProps = {
+  steps: StepsObjProps[];
+};
+
+export default function FormContainer({ steps }: StepsProps) {
+  const [currentStep, setCurrentStep] = useState<number | undefined>(1);
 
   const nextStep = () => {
     setCurrentStep((prevState) => {

@@ -1,4 +1,6 @@
-const Step = ({ step, currentStep }) => {
+import { type StepsObjProps } from "../FormContainer";
+
+const Step = (step: StepsObjProps, currentStep: number) => {
   return (
     <li
       key={step.step}
