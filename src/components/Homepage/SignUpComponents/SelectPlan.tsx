@@ -99,7 +99,12 @@ const planCards = [
   },
 ];
 
-const SelectPlan = ({ onNextStep, onPrevStep }) => {
+type SelectPlanActions = {
+  onNextStep: () => void;
+  onPrevStep: () => void;
+};
+
+const SelectPlan = ({ onNextStep, onPrevStep }: SelectPlanActions) => {
   // checked = monthly
   const [checked, setChecked] = useState(true);
 
@@ -114,7 +119,7 @@ const SelectPlan = ({ onNextStep, onPrevStep }) => {
       <div className="select-plan-cards">
         {planCards.map((card) => (
           <SelectPlanCard
-            // Add key
+            key={card.level}
             card={card}
             checked={checked}
           />
@@ -152,7 +157,19 @@ const SelectPlan = ({ onNextStep, onPrevStep }) => {
   );
 };
 
-const SelectPlanCard = ({ card, checked }) => {
+type PlanCardProps = {
+  card: {
+    cardImg: JSX.Element;
+    level: string;
+    price: {
+      monthly: string;
+      yearly: string;
+    };
+  };
+  checked?: boolean;
+};
+
+const SelectPlanCard = ({ card, checked }: PlanCardProps) => {
   return (
     <div className="plan-card">
       {card.cardImg}

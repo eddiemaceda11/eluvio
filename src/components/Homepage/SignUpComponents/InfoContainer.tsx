@@ -3,7 +3,13 @@ import SelectPlan from "./SelectPlan";
 import AddOns from "./AddOns";
 import Summary from "./Summary";
 
-const InfoContainer = ({ currentStep, onNextStep, onPrevStep }) => {
+type InfoContainerActions = {
+  currentStep: number;
+  onNextStep: () => void;
+  onPrevStep: () => void;
+};
+
+const InfoContainer = ({ currentStep, onNextStep, onPrevStep }: InfoContainerActions) => {
   return (
     <section className="info-container">
       {currentStep === 1 && <PersonalInfo onNextStep={onNextStep} />}
