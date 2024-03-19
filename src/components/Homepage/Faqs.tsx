@@ -1,7 +1,13 @@
 import { useState } from "react";
 
+type FaqsListObject = {
+  id?: number;
+  question: string;
+  answer: string;
+};
+
 // Array of FAQS questions and answers
-const faqsList = [
+const faqsList: FaqsListObject[] = [
   {
     id: 0,
     question: "Can I try Eluvio for free?",
@@ -53,7 +59,13 @@ const Faqs = () => {
   );
 };
 
-const FaqsItem = ({ num, question, answer, currentOpen, onOpen }) => {
+type FaqItemProps = {
+  num: number;
+  currentOpen: number | null;
+  onOpen: (isOpen: null | number) => void;
+} & FaqsListObject;
+
+const FaqsItem = ({ num, question, answer, currentOpen, onOpen }: FaqItemProps) => {
   // determine if the current Faqs item is open
   const isOpen = num === currentOpen;
 
