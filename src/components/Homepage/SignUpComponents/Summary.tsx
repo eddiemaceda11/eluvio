@@ -1,4 +1,8 @@
-const Summary = ({ onPrevStep }) => {
+type SummaryProps = {
+  onPrevStep: () => void;
+};
+
+const Summary = ({ onPrevStep }: SummaryProps) => {
   return (
     <div className="summary">
       <h1>Finishing up</h1>

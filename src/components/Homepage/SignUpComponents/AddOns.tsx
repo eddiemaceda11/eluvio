@@ -24,7 +24,12 @@ const addOnsData = [
   },
 ];
 
-const AddOns = ({ onNextStep, onPrevStep }) => {
+type AddOnsProps = {
+  onNextStep: () => void;
+  onPrevStep: () => void;
+};
+
+const AddOns = ({ onNextStep, onPrevStep }: AddOnsProps) => {
   return (
     <div className="add-ons">
       <h1>Pick add-ons</h1>
@@ -50,7 +55,17 @@ const AddOns = ({ onNextStep, onPrevStep }) => {
   );
 };
 
-const AddOnItem = ({ addOnsData }) => {
+type AddOnItemProps = {
+  addOnsData: {
+    label: string;
+    desc: string;
+    addOnPrice: {
+      monthly: string;
+    };
+  };
+};
+
+const AddOnItem = ({ addOnsData }: AddOnItemProps) => {
   const [checked, setChecked] = useState(false);
 
   return (

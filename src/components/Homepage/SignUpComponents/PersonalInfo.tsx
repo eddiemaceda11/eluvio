@@ -1,4 +1,8 @@
-const PersonalInfo = ({ onNextStep }) => {
+type PersonalInfoProps = {
+  onNextStep: () => void;
+};
+
+const PersonalInfo = ({ onNextStep }: PersonalInfoProps) => {
   return (
     <div className="personal-info">
       <h1>Personal Info</h1>
