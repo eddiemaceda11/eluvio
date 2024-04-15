@@ -5,10 +5,7 @@ import { useRef } from "react";
 function AccountModal({ modalRef }) {
   return (
     <>
-      <dialog
-        ref={modalRef}
-        closed
-      >
+      <dialog ref={modalRef}>
         <p>Modal</p>
         <p>Hello</p>
       </dialog>
@@ -34,14 +31,14 @@ const Logo = () => {
 };
 
 const Account = () => {
-  const modalRef = useRef();
+  const modalRef = useRef<HTMLDialogElement>(null);
 
   const toggle = () => {
-    if (modalRef.current.open) {
+    if (modalRef.current!.open) {
       console.log("open");
-      modalRef.current.close();
+      modalRef.current!.close();
     } else {
-      modalRef.current.showModal();
+      modalRef.current!.showModal();
     }
   };
 
