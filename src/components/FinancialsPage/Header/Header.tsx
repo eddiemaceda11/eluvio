@@ -1,4 +1,20 @@
 import "./header.css";
+import { useRef } from "react";
+// import AccountModal from "./UserAccount/userAccount";
+
+function AccountModal({ modalRef }) {
+  return (
+    <>
+      <dialog
+        ref={modalRef}
+        closed
+      >
+        <p>Modal</p>
+        <p>Hello</p>
+      </dialog>
+    </>
+  );
+}
 
 const HeaderMenu = () => {
   return (
@@ -18,7 +34,28 @@ const Logo = () => {
 };
 
 const Account = () => {
-  return <div className="account">account</div>;
+  const modalRef = useRef();
+
+  const toggle = () => {
+    if (modalRef.current.open) {
+      console.log("open");
+      modalRef.current.close();
+    } else {
+      modalRef.current.showModal();
+    }
+  };
+
+  return (
+    <>
+      <AccountModal modalRef={modalRef} />
+      <button
+        className="account"
+        onClick={toggle}
+      >
+        account
+      </button>
+    </>
+  );
 };
 
 export const Header = () => {
