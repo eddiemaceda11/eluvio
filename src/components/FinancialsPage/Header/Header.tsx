@@ -4,14 +4,16 @@ import { useRef } from "react";
 
 function AccountModal({ modalRef }) {
   return (
-    <>
+    <div className="account-modal">
       <dialog ref={modalRef}>
         <p>Modal</p>
         <p>Hello</p>
       </dialog>
-    </>
+    </div>
   );
 }
+
+//
 
 const HeaderMenu = () => {
   return (
@@ -35,7 +37,6 @@ const Account = () => {
 
   const toggle = () => {
     if (modalRef.current!.open) {
-      console.log("open");
       modalRef.current!.close();
     } else {
       modalRef.current!.showModal();
@@ -44,7 +45,6 @@ const Account = () => {
 
   return (
     <>
-      <AccountModal modalRef={modalRef} />
       <button
         className="account"
         onClick={toggle}
@@ -54,6 +54,8 @@ const Account = () => {
     </>
   );
 };
+
+//
 
 export const Header = () => {
   return (
