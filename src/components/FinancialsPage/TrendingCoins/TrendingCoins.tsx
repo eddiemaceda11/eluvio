@@ -23,6 +23,8 @@ export const TrendingCoins = ({ coins }: TrendingCoinProps) => {
             <tr></tr>
             {coins
               ? coins.map((coin: TrendingCoinType, index) => {
+                  coin.coinPrice = coin.coinPrice.toString().slice(0, 9);
+
                   return (
                     <tr>
                       <th>{index + 1}</th>
@@ -33,7 +35,7 @@ export const TrendingCoins = ({ coins }: TrendingCoinProps) => {
                         />
                         {coin.coinSymbol}
                       </td>
-                      <td>{(coin.coinPrice = coin.coinPrice.length > 10 ? "N/A" : coin.coinPrice)}</td>
+                      <td>$ {coin.coinPrice}</td>
                       <td className={Number(coin.percentage).toFixed(2).indexOf("-") !== -1 ? "negative" : "positive"}>{Number(coin.percentage).toFixed(2)}%</td>
                     </tr>
                   );
