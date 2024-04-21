@@ -1,0 +1,62 @@
+.market-news-section {
+  height: 430px;
+  min-width: 350px;
+  max-width: 350px;
+  padding: 1rem;
+  box-shadow: 1px 1px 8px 0px rgba(170, 170, 170, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.market-news-section h2 {
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+
+.news-container {
+  overflow: scroll;
+  height: 90%;
+}
+
+.news-container ul {
+  width: 100%;
+}
+
+.news-container ul li {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.news-container ul li img {
+  height: 70%;
+  min-width: 115px;
+  margin-right: 0.8rem;
+  border: 1px solid rgb(230, 230, 230);
+  object-fit: contain;
+}
+
+.news-container ul li p:first-child {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-spacing: 2px;
+}
+
+.news-container ul li p:nth-child(2) {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(121, 121, 121);
+  line-height: 1.4;
+  word-spacing: 2px;
+  margin-top: 2px;
+}
+
+.news-container ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(14, 41, 100);
+  line-height: 1.4;
+  text-decoration: none;
+}
