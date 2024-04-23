@@ -8,7 +8,7 @@ type TrendingCoinProps = {
 export const TrendingCoins = ({ coins }: TrendingCoinProps) => {
   return (
     <div className="trending-coins">
-      <h2>Crypto - Trending</h2>
+      <h2>Crypto / Trending</h2>
       <div className="table-container">
         <table align="center">
           <thead>
