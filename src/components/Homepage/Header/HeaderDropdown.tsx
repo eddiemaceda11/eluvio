@@ -24,45 +24,45 @@ const HeaderDropdown = ({ dropdownActive }: DropdownProps) => {
         <ul>
           <div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1692231088-sales.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be47f9a65715902e39e82_sales.svg" />
               <li>Sales & Marketing</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1692281553-payments.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5b2dc1d409ae8b31c11_payments.svg" />
               <li>Payments</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1693405120-analytics.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5af86ef8e29810e902f_analytics.svg" />
               <li>Analytics & Reporting</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1692231086-creator-support-services.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5af27a9fa04c33d88b3_creator-support-services.svg" />
               <li>Support Services</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1695243381-page-builder.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5b2f4e21d5897b086b0_page-builder.svg" />
               <li>Site Builder</li>
             </div>
           </div>
           <div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1689903405-memberships.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5b1c15aedc3eb195b31_memberships.svg" />
               <li>Memberships</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1692231084-ai-hub.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5af02a0d530f59fd683_ai-hub.svg" />
               <li>AI Features</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1689903406-integrations.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5af5439880199d78517_integrations.svg" />
               <li>App Hub</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1694616705-student-engagement.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5b260c754e55a40f55e_student-engagement.svg" />
               <li>User Accounts</li>
             </div>
             <div className="rs-nav-links">
-              <img src="https://www.datocms-assets.com/67254/1693405126-advanced-features.svg" />
+              <img src="https://assets-global.website-files.com/65393b768d06ee4c16d24a0b/653be5ae54572c1efd5a55b6_advanced-features.svg" />
               <li>Advanced Features</li>
             </div>
           </div>

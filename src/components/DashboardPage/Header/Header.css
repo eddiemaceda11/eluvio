@@ -1,10 +1,11 @@
 .dashboard-header {
   height: 80px;
-  height: 10% / 80px;
-  border-radius: 4px;
+  /* height: 10% / 80px; */
+  /* border-radius: 4px; */
   /* box-shadow: 0px 0px 0px 5px rgb(214, 214, 214); */
-  box-shadow: 0px 0px 5px 1px rgb(221, 221, 221);
-  background-color: #ededed;
+  /* box-shadow: 0px 0px 5px 1px rgb(221, 221, 221); */
+  /* background-color: #ededed; */
+  background-color: #fbfbfb;
   color: var(--main-text-color);
 }
 
@@ -27,7 +28,7 @@
   width: 100%;
   border: none;
   border-radius: 16px;
-  background-color: #dfdfdf;
+  background-color: #ececec;
 }
 
 .db-header-searchdiv input:focus {
