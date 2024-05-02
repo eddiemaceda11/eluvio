@@ -1,5 +1,5 @@
 import { type Dispatch, type SetStateAction } from "react";
-import { type MarketNewsType } from "../App";
+// import { type MarketNewsType } from "../App";
 
 type News = {
   title: string; // feed.title

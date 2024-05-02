@@ -59,7 +59,6 @@ const FinancialsPage = () => {
     fetchMarketNews(setMarketNews);
     fetchStocks(setStocks);
   }, []);
-  console.log(stocks);
 
   return (
     <div>

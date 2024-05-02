@@ -1,5 +1,5 @@
 import "./marketnews.css";
-import { type MarketNewsType } from "../../../pages/Financials/Financials";
+// import { type MarketNewsType } from "../../../pages/Financials/Financials";
 
 const dummyData = [
   {
@@ -50,7 +50,7 @@ const dummyData = [
 //   news: MarketNewsType[]
 // }
 
-export const MarketNews = (news: MarketNewsType[]) => {
+export const MarketNews = (news) => {
   // If API data cannot be fetched, return placeholder data
   return (
     <div className="market-news-section">
