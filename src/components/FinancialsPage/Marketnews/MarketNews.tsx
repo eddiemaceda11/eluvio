@@ -52,13 +52,14 @@ const dummyData = [
 
 export const MarketNews = (news) => {
   // If API data cannot be fetched, return placeholder data
+  console.log(news.news);
   return (
     <div className="market-news-section">
       <h2>News</h2>
       <div className="news-container">
-        {news.length ? (
+        {news.news.length ? (
           <ul>
-            {news.map((item) => (
+            {news.news.map((item) => (
               <li>
                 <img src={item.image} />
                 <div>
@@ -71,7 +72,7 @@ export const MarketNews = (news) => {
           </ul>
         ) : (
           <ul>
-            {dummyData.map((item) => (
+            {/* {dummyData.map((item) => (
               <li>
                 <img src={item.image} />
                 <div>
@@ -80,7 +81,7 @@ export const MarketNews = (news) => {
                   <a href={item.link}>Read more</a>
                 </div>
               </li>
-            ))}
+            ))} */}
           </ul>
         )}
       </div>
