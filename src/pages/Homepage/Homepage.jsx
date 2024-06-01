@@ -8,9 +8,11 @@ import Companies from "../../components/Homepage/Companies/Companies";
 import SignUp from "../../components/Homepage/SignUpComponents/SignUp";
 import Chatbot from "../../components/Homepage/ChatBot/Chatbot";
 
+import "./Homepage.css";
+
 function Homepage() {
   return (
-    <>
+    <div className="homepage">
       <Header />
       <Main />
       <Hero />
@@ -20,7 +22,7 @@ function Homepage() {
       {/* <Reviews /> */}
       <Companies />
       <Chatbot />
-    </>
+    </div>
   );
 }
 

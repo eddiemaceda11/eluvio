@@ -34,19 +34,21 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="chatbot-widget">
-      <header></header>
-      <section>
-        <p className="incoming">HI</p>
-        <p className="outgoing">Can you please help</p>
-        {loading === false && !aiResponse ? "" : loading === true && search != "" ? <p className="incoming">Loading</p> : <p className="incoming">{aiResponse}</p>}
-      </section>
-      <input
-        type="text"
-        placeholder="Search Food with Category using Generative AI"
-        onChange={(e) => handleChangeSearch(e)}
-      ></input>
-      <button onClick={() => handleClick()}></button>
+    <div className="chatbot-widget-container">
+      <div className="chatbot-widget">
+        <header></header>
+        <section>
+          <p className="incoming">HI</p>
+          <p className="outgoing">Can you please help</p>
+          {loading === false && !aiResponse ? "" : loading === true && search != "" ? <p className="incoming">Loading</p> : <p className="incoming">{aiResponse}</p>}
+        </section>
+        <input
+          type="text"
+          placeholder="Search Food with Category using Generative AI"
+          onChange={(e) => handleChangeSearch(e)}
+        ></input>
+        <button onClick={() => handleClick()}></button>
+      </div>
     </div>
   );
 };
