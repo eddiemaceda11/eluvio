@@ -1,0 +1,59 @@
+.chatbot-widget {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 500px;
+  width: 330px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.chatbot-widget header {
+  border-bottom: 1px solid #fff;
+  overflow: none;
+  width: 100.1%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: linear-gradient(to right, rgb(14, 127, 233), rgb(167, 202, 255));
+
+  height: 70px;
+}
+
+.chatbot-widget section {
+  height: 65%;
+  color: #000;
+  margin: 1rem;
+  display: flex;
+  overflow: scroll;
+  flex-direction: column;
+  gap: 0;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.chatbot-widget section p {
+  margin: 3px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.chatbot-widget section p.outgoing {
+  text-align: right;
+  background-color: #effdff;
+}
+
+.chatbot-widget section p.incoming {
+  text-align: left;
+  background-color: rgb(240, 240, 240);
+}
+
+.chatbot-widget input {
+  height: 11%;
+  width: 75%;
+}
+
+.chatbot-widget button {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  right: -6%;
+  bottom: 4%;
+}

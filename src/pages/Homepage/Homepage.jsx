@@ -6,6 +6,7 @@ import Faqs from "../../components/Homepage/Faqs";
 import Reviews from "../../components/Homepage/Reviews";
 import Companies from "../../components/Homepage/Companies/Companies";
 import SignUp from "../../components/Homepage/SignUpComponents/SignUp";
+import Chatbot from "../../components/Homepage/ChatBot/Chatbot";
 
 function Homepage() {
   return (
@@ -18,6 +19,7 @@ function Homepage() {
       <Faqs />
       {/* <Reviews /> */}
       <Companies />
+      <Chatbot />
     </>
   );
 }

@@ -7,12 +7,12 @@ const genAI = new GoogleGenerativeAI("AIzaSyCMUesgAi9jqnCoHlxg58C4OsSpaJC-lhM");
 // Access the API key
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-export const Chatbot = () => {
+const Chatbot = () => {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [aiResponse, setResponse] = useState("");
 
-  const handleChangeSearch = (e) => {
+  const handleChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
 
@@ -49,3 +49,5 @@ export const Chatbot = () => {
     </div>
   );
 };
+
+export default Chatbot;
