@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useState } from "react";
+import "./chatbot.css";
 
 // Fetch the API key
 const genAI = new GoogleGenerativeAI("AIzaSyCMUesgAi9jqnCoHlxg58C4OsSpaJC-lhM");
