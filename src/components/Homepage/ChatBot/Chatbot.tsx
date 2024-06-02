@@ -12,6 +12,8 @@ const Chatbot = () => {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [aiResponse, setResponse] = useState("");
+  const [chatIsOpen, setChatIsOpen] = useState(false);
+  console.log(chatIsOpen);
 
   const handleChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
@@ -34,22 +36,30 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="chatbot-widget-container">
-      <div className="chatbot-widget">
-        <header></header>
-        <section>
-          <p className="incoming">HI</p>
-          <p className="outgoing">Can you please help</p>
-          {loading === false && !aiResponse ? "" : loading === true && search != "" ? <p className="incoming">Loading</p> : <p className="incoming">{aiResponse}</p>}
-        </section>
-        <input
-          type="text"
-          placeholder="Search Food with Category using Generative AI"
-          onChange={(e) => handleChangeSearch(e)}
-        ></input>
-        <button onClick={() => handleClick()}></button>
+    <>
+      <div className={chatIsOpen ? "chatbot-widget-container active" : "chatbot-widget-container"}>
+        <div className="chatbot-widget">
+          <header></header>
+          <section>
+            <p className="incoming">HI</p>
+            <p className="outgoing">Can you please help</p>
+            {loading === false && !aiResponse ? "" : loading === true && search != "" ? <p className="incoming">Loading</p> : <p className="incoming">{aiResponse}</p>}
+          </section>
+          <input
+            type="text"
+            placeholder="Search Food with Category using Generative AI"
+            onChange={(e) => handleChangeSearch(e)}
+          ></input>
+          <button onClick={() => handleClick()}></button>
+        </div>
       </div>
-    </div>
+      <button
+        className="open-chat"
+        onClick={() => setChatIsOpen(!chatIsOpen)}
+      >
+        <i className="fa-solid fa-comment-dots"></i>
+      </button>
+    </>
   );
 };
 

@@ -3,7 +3,6 @@
   opacity: 0;
   display: flex;
 
-  /* border-top: none; */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   box-shadow: 0px 1.2px 4px 0.6px rgba(55, 55, 55, 0.185);
@@ -11,6 +10,7 @@
 
   /* remove shadow from top border */
   clip-path: inset(0px -10px -10px -10px);
+
   width: 65%;
   height: 0px;
   top: 100%;
@@ -19,7 +19,6 @@
   z-index: 1;
   gap: 3rem;
   transition: 0.4s ease;
-  /* border: 1px solid red; */
 }
 
 .dropdown-left {
