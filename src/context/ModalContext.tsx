@@ -1,8 +1,13 @@
 import { useState, createContext } from "react";
 
-const ModalContext = createContext(null);
+type ModalContextProps = {
+  modalOpen: boolean;
+  handleModalToggle: () => void;
+};
 
-const ModalContextProvider = ({ children }) => {
+const ModalContext = createContext<ModalContextProps>({} as ModalContextProps);
+
+const ModalContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleModalToggle = () => {

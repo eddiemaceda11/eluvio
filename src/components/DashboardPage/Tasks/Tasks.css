@@ -1,15 +1,9 @@
 .dashboard-tasks {
-  height: 300px;
-  height: 42.5%;
-  border-radius: 4px;
-  margin-top: 2rem;
+  height: 58%;
   padding: 0.9rem 2rem 1rem 2rem;
-  /* box-shadow: 0px 0px 0px 5px rgb(214, 214, 214); */
-  /* box-shadow: 0px 0px 5px 1px rgb(221, 221, 221); */
-  /* background-color: #ededed; */
-  overflow: scroll;
-
-  /* overflow-clip-margin: 100px; */
+  border-bottom: 1px solid rgb(225, 225, 225);
+  border-top: 1px solid rgb(225, 225, 225);
+  /* overflow: scroll; */
 }
 
 /* TASKS COLUMN NAMES */
@@ -17,29 +11,39 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+
+  /* border: 1px solid red; */
+  height: 80%;
 }
 
 .db-tasks-column-names {
+  background-color: white;
   display: flex;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   border-top: 1px solid #d4d4d4;
   border-bottom: 1px solid #d4d4d4;
-  justify-content: space-between;
-
+  justify-content: space-around;
   color: var(--main-text-color);
+  /* margin-right: 3rem; */
 }
 
-th,
+.db-tasks-column-names th {
+  width: 30%;
+}
+
 td {
   width: 30%;
+}
+
+.db-task-cells-container {
+  overflow: scroll;
 }
 
 .db-tasks-column-cells {
   display: flex;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   justify-content: space-between;
   text-align: center;
   color: #3f4d68;
