@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
+import { TrendingCoinType } from "../pages/Financials/Financials";
 
 export type TrendingCoin = {
   item: {
@@ -14,7 +15,7 @@ export type TrendingCoin = {
 };
 
 // Function to fetch top 15 trending coins
-export const fetchTrendingCoins = async (setTrendingCoins: Dispatch<SetStateAction<TrendingCoin[]>>) => {
+export const fetchTrendingCoins = async (setTrendingCoins: Dispatch<SetStateAction<TrendingCoinType[]>>) => {
   const response = await fetch("https://api.coingecko.com/api/v3/search/trending");
   const data = await response.json();
   // destructure coins to only get necessary items
